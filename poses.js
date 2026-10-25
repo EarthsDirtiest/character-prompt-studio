@@ -362,9 +362,76 @@ additions.push(...[
     "Kneeling on one knee with the opposite foot planted forward, bending slightly to adjust the selected shoe’s actual fastening or upper. Keep the hands lightly placed so most of the forward shoe remains unobstructed; do not add laces or straps that the chosen shoe does not have."
   ]
 ]);
+additions.push(...[
+  [
+    "Feminine anime poses",
+    "Raised knee, wink and double peace signs",
+    "Balancing on one leg with the other knee lifted high in front and bent comfortably. Hold both hands beside the face with index and middle fingers forming outward-facing V-shaped peace signs. Wink one eye, smile playfully and lean the torso slightly toward the supporting leg for balance. Keep the raised foot relaxed and clearly separated from the supporting leg."
+  ],
+  [
+    "Feminine anime poses",
+    "Wink with peace sign by eye",
+    "Standing with weight shifted onto one leg, the free knee softly bent and one hand forming a V-shaped peace sign beside the open eye. Wink the other eye and smile, with the opposite hand resting lightly at the hip. Keep the fingers clear of the eyes."
+  ],
+  [
+    "Feminine anime poses",
+    "Double peace signs, heel kicked back",
+    "Balancing on one supporting leg while bending the other knee so that heel lifts behind the body. Raise both hands beside the shoulders in V-shaped peace signs, tilt the head gently and smile brightly. Keep the feet visually separated."
+  ],
+  [
+    "Feminine anime poses",
+    "Idol pose, one knee raised",
+    "Balancing with one knee raised in front, pointing one index finger upward beside the head while the opposite hand rests at the waist. Lift the chin slightly and smile confidently, keeping the shoulders relaxed and the supporting leg stable."
+  ],
+  [
+    "Feminine anime poses",
+    "Hands making a heart",
+    "Standing with knees gently angled together and one foot slightly forward, forming a heart shape with both hands at chest height. Tilt the head subtly and give a warm, cheerful smile."
+  ],
+  [
+    "Feminine anime poses",
+    "Finger heart and wink",
+    "Standing in a relaxed three-quarter stance with one hand extended gently forward, crossing the thumb and index finger into a small finger-heart gesture. Wink and smile while the opposite hand rests near the waist."
+  ],
+  [
+    "Feminine anime poses",
+    "Shy clasped hands",
+    "Standing with feet close together and one knee softly bent, both hands loosely clasped in front of the chest. Draw the shoulders gently inward, tilt the head slightly down and glance upward with a shy, gentle smile."
+  ],
+  [
+    "Feminine anime poses",
+    "Hands framing cheeks",
+    "Standing with elbows bent and both open hands held beside the cheeks, palms angled inward without covering the face. Tilt the head slightly and smile with a playful, surprised expression, keeping one foot slightly forward."
+  ],
+  [
+    "Feminine anime poses",
+    "Playful cat-paw hands",
+    "Standing with knees softly bent and one hip shifted sideways, both hands loosely curled near the shoulders in a playful cat-paw gesture. Keep wrists relaxed, elbows bent and the head tilted, with a cheerful smile."
+  ],
+  [
+    "Feminine anime poses",
+    "Magical heroine stance",
+    "Standing in a confident, stylized heroine pose with feet staggered, one hand at the hip and the opposite arm extended diagonally upward with an open palm. Turn the shoulders slightly toward the viewer and wear a determined, upbeat expression."
+  ],
+  [
+    "Feminine anime poses",
+    "Joyful jump with peace signs",
+    "Captured during a small joyful jump with both knees bent, lower legs angled backward and feet separated. Hold both hands beside the head in V-shaped peace signs, with an open, delighted smile and relaxed shoulders."
+  ],
+  [
+    "Feminine anime poses",
+    "Playful turn, looking back",
+    "Turning the torso in a light, playful half-spin, with one foot supporting the body and the other toe touching down slightly behind. Look back over one shoulder with a cheerful smile, one hand lifted in a small wave and the other arm softly extended for balance."
+  ],
+  [
+    "Sitting",
+    "Feet resting on a desk",
+    "Sitting comfortably back in a sturdy chair behind a desk, with the back supported and both legs extended forward so that both shoe heels rest on the desktop. Keep the ankles uncrossed and the feet slightly apart, showing each shoe distinctly. Rest one forearm on a chair armrest and the other hand loosely in the lap. Use a side or three-quarter arrangement of the chair and desk so the seated posture, extended legs, and footwear resting on the desk are clear."
+  ]
+]);
 const poses=originalLabels.map((label,id)=>({id:String(id),label,category:originalCategories[id],description:poseDescriptions[id]}));
 for(const [category,label,description] of additions){const id=String(poseDescriptions.length);poseDescriptions.push(description);poses.push({id,label,category,description});}
-const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses','Riding crop','Shoe-focused poses'];
+const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses','Riding crop','Shoe-focused poses','Feminine anime poses'];
 const field=document.querySelector('.poses'),grid=field.querySelector('.pose-grid');field.querySelector('.note').textContent='Browse a category or search by name. Your selected pose stays selected while you browse.';
 const filters=document.createElement('div');filters.className='pose-filters fields';filters.innerHTML='<div><label for="poseCategory">Pose category</label><select id="poseCategory"></select></div><div><label for="poseSearch">Find a pose</label><input id="poseSearch" type="search" placeholder="e.g. crossed legs, boxing, leaning"></div>';grid.before(filters);
 const category=document.getElementById('poseCategory'),search=document.getElementById('poseSearch');category.add(new Option('All categories',''));for(const name of categories)category.add(new Option(name,name));category.value='Standing';
