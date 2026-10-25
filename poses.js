@@ -280,9 +280,91 @@ additions.push(...[
     "Leaning one shoulder lightly against a wall with one knee relaxed, holding a riding crop by the handle at hip height with its shaft angled downward across the front of the legs. The other hand rests near the waist and the gaze is calm."
   ]
 ]);
+additions.push(...[
+  [
+    "Shoe-focused poses",
+    "One foot forward, shoe display",
+    "Standing with weight on the back leg and the other foot placed slightly forward and turned outward. Keep the forward sole resting on the ground, with arms relaxed, so the selected shoe’s toe shape, upper, and fastening can be seen clearly."
+  ],
+  [
+    "Shoe-focused poses",
+    "Three-quarter footwear stance",
+    "Standing at a three-quarter angle with feet offset and a small gap between them. Angle one foot toward the viewer and the other sideways to show the front and side profiles of the selected footwear. Keep the posture tall and natural."
+  ],
+  [
+    "Shoe-focused poses",
+    "Side profile, heel silhouette",
+    "Standing side-on with one foot half a step ahead of the other and both soles grounded. Keep the legs visually separated so the footwear’s heel height, heel shape, sole, and side profile can be distinguished."
+  ],
+  [
+    "Shoe-focused poses",
+    "Crossed ankles, offset shoes",
+    "Standing with ankles loosely crossed and the front foot angled outward, keeping a small offset between the shoes so neither fully conceals the other. Rest one hand at the waist and keep the shoulders relaxed."
+  ],
+  [
+    "Shoe-focused poses",
+    "Toe resting behind",
+    "Standing on one supporting leg while placing the other foot slightly behind, heel gently raised and toe resting on the floor. Turn the raised heel slightly outward to reveal the back and heel construction of the selected shoe."
+  ],
+  [
+    "Shoe-focused poses",
+    "Rear three-quarter shoe view",
+    "Standing at a rear three-quarter angle with feet slightly apart and one heel gently lifted. Let the arms rest at the sides to reveal the rear shape, heel counters, and heel details of the selected footwear."
+  ],
+  [
+    "Shoe-focused poses",
+    "Foot on a low step",
+    "Standing beside a low step with one foot planted on it and the other on the floor. Keep the raised knee naturally bent, torso upright and hands clear of the shoe, presenting its upper, fastening, and side profile."
+  ],
+  [
+    "Shoe-focused poses",
+    "Foot on a low rail",
+    "Standing with one foot resting on a low sturdy rail and the other firmly grounded, knee bent comfortably. Angle the raised foot outward and keep the hands relaxed at the waist to show the shoe or boot’s construction."
+  ],
+  [
+    "Shoe-focused poses",
+    "Seated, one leg extended",
+    "Sitting near the front of a chair with one foot grounded and the other leg extended diagonally forward, heel resting on the floor. Turn the extended foot slightly outward to show the selected shoe’s toe, upper, and side profile."
+  ],
+  [
+    "Shoe-focused poses",
+    "Seated, ankles crossed",
+    "Sitting upright with lower legs angled gently forward and ankles crossed loosely. Keep the shoes slightly offset and hands in the lap, making their contrasting front and side angles easy to distinguish."
+  ],
+  [
+    "Shoe-focused poses",
+    "Seated, foot lifted slightly",
+    "Sitting upright on a chair with one foot grounded and the other lifted a short distance above the floor, knee bent naturally. Angle the lifted foot sideways to reveal its sole edge and heel without forcing the ankle."
+  ],
+  [
+    "Shoe-focused poses",
+    "Seated, figure-four shoe display",
+    "Sitting on a sturdy chair with one ankle resting comfortably across the opposite thigh. Keep the lifted foot relaxed and one hand resting lightly on the shin, leaving the shoe’s upper, side, and sole edge unobstructed."
+  ],
+  [
+    "Shoe-focused poses",
+    "Seated sideways, boot silhouette",
+    "Sitting sideways on a low bench with feet staggered on the floor and knees comfortably bent. Keep the legs separated in profile and hands on the bench beside the hips to reveal the selected boots’ shafts, folds, and heel silhouettes."
+  ],
+  [
+    "Shoe-focused poses",
+    "Paused mid-step",
+    "Pausing in a natural walking step with the front heel touching the floor and the back heel lifted. Keep the feet offset rather than overlapping, showing the front shoe’s upper and the back shoe’s heel and sole edge."
+  ],
+  [
+    "Shoe-focused poses",
+    "Stepping onto a platform",
+    "Stepping onto a low platform with the leading foot planted on top and the trailing foot pushing off the floor. Keep the torso balanced and arms naturally positioned, showing the footwear from two complementary angles."
+  ],
+  [
+    "Shoe-focused poses",
+    "Kneeling, adjusting a fastening",
+    "Kneeling on one knee with the opposite foot planted forward, bending slightly to adjust the selected shoe’s actual fastening or upper. Keep the hands lightly placed so most of the forward shoe remains unobstructed; do not add laces or straps that the chosen shoe does not have."
+  ]
+]);
 const poses=originalLabels.map((label,id)=>({id:String(id),label,category:originalCategories[id],description:poseDescriptions[id]}));
 for(const [category,label,description] of additions){const id=String(poseDescriptions.length);poseDescriptions.push(description);poses.push({id,label,category,description});}
-const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses','Riding crop'];
+const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses','Riding crop','Shoe-focused poses'];
 const field=document.querySelector('.poses'),grid=field.querySelector('.pose-grid');field.querySelector('.note').textContent='Browse a category or search by name. Your selected pose stays selected while you browse.';
 const filters=document.createElement('div');filters.className='pose-filters fields';filters.innerHTML='<div><label for="poseCategory">Pose category</label><select id="poseCategory"></select></div><div><label for="poseSearch">Find a pose</label><input id="poseSearch" type="search" placeholder="e.g. crossed legs, boxing, leaning"></div>';grid.before(filters);
 const category=document.getElementById('poseCategory'),search=document.getElementById('poseSearch');category.add(new Option('All categories',''));for(const name of categories)category.add(new Option(name,name));category.value='Standing';
