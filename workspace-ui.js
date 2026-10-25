@@ -1,6 +1,6 @@
 (()=>{
 const $=id=>document.getElementById(id),make=(tag,cls)=>{const el=document.createElement(tag);if(cls)el.className=cls;return el};
-const skin=make('link');skin.rel='stylesheet';skin.href='workspace-ui.css';document.head.append(skin);
+const skin=make('link');skin.rel='stylesheet';skin.href='workspace-ui.css?v=2eda708454f0';document.head.append(skin);
 const form=$('builder'),panel=form.parentElement,groups=[...form.querySelectorAll('.editor-section')],library=panel.querySelector('.library');
 const shell=make('div','builder-shell'),nav=make('nav','section-nav'),workspace=make('div','builder-workspace'),title=make('h2','workspace-title'),deck=make('div','builder-deck'),toolbar=make('div','builder-toolbar');nav.setAttribute('aria-label','Character sections');shell.append(nav,workspace);workspace.append(title);panel.append(shell);workspace.append(library,form);
 const actions=$('random').parentElement;toolbar.append(actions,$('allWardrobes').parentElement);const save=make('button','save-shortcut');save.type='button';save.textContent='Save character…';toolbar.append(save);form.append(toolbar,deck);for(const group of groups)deck.append(group);for(const child of [...form.children])if(child!==toolbar&&child!==deck)child.hidden=true;

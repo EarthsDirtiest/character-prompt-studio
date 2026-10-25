@@ -1,5 +1,15 @@
 (()=>{
 const originalLabels=[...document.querySelectorAll('input[name=pose]')].map(input=>input.closest('label').textContent.trim());
+// Poses specify the body and gesture; camera controls own the viewpoint and framing.
+poseDescriptions[3]='Walking naturally mid-stride, arms swinging and feet offset.';
+poseDescriptions[6]='Sitting upright on a simple stool with knees apart and both feet planted.';
+poseDescriptions[7]='Kneeling on one knee with the other foot planted forward and the legs slightly offset.';
+poseDescriptions[8]='Crouching with bent knees and feet separated.';
+poseDescriptions[9]='Standing in a poised ballet stance with arms softly curved outward and both feet on the ground.';
+poseDescriptions[11]='Standing with the torso gently rotated away, turning the head back over one shoulder.';
+poseDescriptions[12]=poseDescriptions[12].replace('Standing with the body turned approximately 30–45 degrees sideways to the camera.','Standing with the torso turned slightly sideways.').replace('Looking directly at the camera','Looking ahead');
+poseDescriptions[13]=poseDescriptions[13].replace('Standing with the back and left side facing the camera, the body rotated approximately 135 degrees away from the viewer.','Standing with the torso rotated partly away and the left shoulder set back.').replace('toward the camera, maintaining direct eye contact with a subtle, confident smile','with a steady gaze and a subtle, confident smile');
+poseDescriptions[14]=poseDescriptions[14].replace('facing the camera','looking ahead').replace(' Use a front three-quarter view of the chair to make the crossed-leg position clear.','');
 const originalCategories=['Standing','Standing','Standing','Walking & running','Gestures','Standing','Sitting','Kneeling & crouching','Kneeling & crouching','Dance & exercise','Gestures','Standing','Standing','Standing','Sitting'];
 const additions=[
 ['Standing','Weight on one leg','Standing naturally with weight on one leg, the other knee relaxed and arms resting at the sides.'],
@@ -216,7 +226,7 @@ additions.push(...[
     "Standing mostly side-on with feet staggered and one hand behind the back, turning the shoulders and head toward the viewer. The posture is tall and still, with a steady, self-possessed gaze."
   ]
 ]);
-additions.push(["Standing","Forward bend, crossed legs, hands behind back","Standing with both legs straight and crossed, one leg placed diagonally in front of the other, with both feet resting on the floor. Keep the knees straight without locking them. Bend the upper body forward from the hips while maintaining the crossed-leg position and a long, aligned spine. Hold both hands together behind the lower back, with the arms kept behind the torso throughout the pose. Keep the shoulders relaxed and the head naturally aligned with the spine. Use a three-quarter angle that clearly shows the forward bend, crossed straight legs, and hands behind the back."]);
+additions.push(["Standing","Forward bend, crossed legs, hands behind back","Standing with both legs straight and crossed, one leg placed diagonally in front of the other, with both feet resting on the floor. Keep the knees straight without locking them. Bend the upper body forward from the hips while maintaining the crossed-leg position and a long, aligned spine. Hold both hands together behind the lower back, with the arms kept behind the torso throughout the pose. Keep the shoulders relaxed and the head naturally aligned with the spine."]);
 originalCategories[13]='Riding crop';
 additions.push(...[
   [
@@ -426,7 +436,7 @@ additions.push(...[
   [
     "Sitting",
     "Feet resting on a desk",
-    "Sitting comfortably back in a sturdy chair behind a desk, with the back supported and both legs extended forward so that both shoe heels rest on the desktop. Keep the ankles uncrossed and the feet slightly apart, showing each shoe distinctly. Rest one forearm on a chair armrest and the other hand loosely in the lap. Use a side or three-quarter arrangement of the chair and desk so the seated posture, extended legs, and footwear resting on the desk are clear."
+    "Sitting comfortably back in a sturdy chair behind a desk, with the back supported and both legs extended forward so that both shoe heels rest on the desktop. Keep the ankles uncrossed and the feet slightly apart, showing each shoe distinctly. Rest one forearm on a chair armrest and the other hand loosely in the lap. Leave space between the chair and desk so the extended legs rest comfortably on the desktop."
   ]
 ]);
 const poses=originalLabels.map((label,id)=>({id:String(id),label,category:originalCategories[id],description:poseDescriptions[id]}));
