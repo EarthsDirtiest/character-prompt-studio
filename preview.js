@@ -9,7 +9,7 @@ for(const group of ['top','bottom']){const details=clothingDetails[group].filter
 const shoeDetails=shoeDefinitions.slice(1).filter(([id])=>!$(id).disabled&&get(id)!=='Style default'&&(id!=='shoeColor'||enabled('shoeColorOverride'))).map(([id,label])=>label+': '+get(id));if(!enabled('shoeColorOverride'))shoeDetails.push('Color: follows clothing palette');card('Shoes',get('shoes'),shoeDetails.join(' · '));
 const face=appearanceDetails.filter(([key])=>enabled('face_'+key+'_enabled')).map(([key,label])=>label+': '+get('face_'+key));card('Face & appearance',face.length?'Customized appearance':'Not specified',face.join(' · '));
 const pose=$('customPoseEnabled').checked?($('customPoseText').value.trim()||'Custom pose (not yet described)'):document.querySelector('input[name=pose]:checked').closest('label').textContent.trim();card('Pose',pose);
-card('Image & scene',get('imageStyle')+' · '+get('lighting')+' · '+get('mood'),'Camera: '+($('camera').value.trim()||'Eye level, front view')+' · Location: '+($('location').value.trim()||'Simple studio background'));
+card('Image & scene',get('imageStyle')+' · '+get('lighting')+' · '+get('mood'),'Framing: '+($('imageFraming').value==='shoes'?'Shoe close-up (both shoes complete)':'Full body')+' · Camera: '+window.cameraStudio.direction($('cameraPreset').value,$('camera').value)+' · Location: '+($('location').value.trim()||'Simple studio background'));
 }
 const previousGenerate=generate;generate=function(){previousGenerate();render()};render();
 })();

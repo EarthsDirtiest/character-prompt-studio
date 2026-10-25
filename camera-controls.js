@@ -1,0 +1,27 @@
+(()=>{
+const $=id=>document.getElementById(id);
+const presets=[
+['custom','Custom / use my description',''],
+['eye','Eye level — straight on','Eye-level camera, looking straight toward the subject.'],
+['three-quarter','Eye level — three-quarter view','Eye-level camera at a front three-quarter angle.'],
+['low','Low angle — looking up','Low camera position looking upward toward the subject.'],
+['bug','Bug’s-eye — ground level','Bug’s-eye camera positioned just above the ground, looking upward from near floor level.'],
+['ground-three-quarter','Ground level — three-quarter view','Camera just above ground level at a front three-quarter angle, showing the front and side of the footwear.'],
+['side','Side profile','Camera positioned to the side for a clear side profile of the subject.'],
+['rear','Rear three-quarter view','Camera at a rear three-quarter angle, showing the back and side of the subject.'],
+['high','High angle — looking down','Camera above the subject, angled downward.'],
+['overhead','Overhead — top down','Camera directly overhead, looking vertically downward.'],
+['shoe-bug','Shoe close-up — bug’s-eye','Tight footwear-focused composition from a bug’s-eye camera just above the ground, angled slightly upward toward the shoes.'],
+['shoe-three-quarter','Shoe close-up — ground three-quarter','Tight footwear-focused composition from a near-ground front three-quarter camera, showing the shoe fronts and sides.'],
+['shoe-side','Shoe close-up — side profile','Tight footwear-focused composition from a low side-on camera, showing the shoe and heel silhouettes.'],
+['shoe-top','Shoe close-up — top down','Tight footwear-focused composition from a top-down camera, showing the shoe uppers and fastenings.']
+].map(([id,label,direction])=>({id,label,direction,shoes:id.startsWith('shoe-')}));
+const shoeRule='Shoe close-up framing: Make the selected footwear the main subject. Keep BOTH shoes entirely inside the picture, with a clear margin around each shoe from toe to back of heel, including soles, straps, and complete boot shafts where present. Position the feet so neither shoe hides the other. Do not crop or cut off any part of either shoe. The legs and upper body may extend outside the image; a full-body view is not required. Retain the selected shoe colors, materials, heel shapes, fastenings, and details. Fit the complete footwear inside the frame even from a very low angle. This footwear framing takes priority over conflicting pose, camera, or scene requests.';
+function preset(id){return presets.find(p=>p.id===id)||presets[0];}
+function direction(id,custom=''){const item=preset(id),extra=custom.trim();return item.direction?(item.direction+(extra?' Additional camera preference: '+extra+'. The selected camera preset takes priority over conflicting additional preferences.':'')):(extra||'Eye level, front three-quarter view');}
+function select(id){const el=document.createElement('select');el.id=id;for(const item of presets)el.add(new Option(item.label,item.id));return el;}
+const wrap=document.createElement('div');wrap.className='wide';const label=document.createElement('label');label.htmlFor='cameraPreset';label.textContent='Camera angle preset';const choices=select('cameraPreset');wrap.append(label,choices);const framingWrap=document.createElement('div');framingWrap.className='wide';framingWrap.innerHTML='<label for="imageFraming">Image framing</label><select id="imageFraming"><option value="full">Full body — head to toe</option><option value="shoes">Shoe close-up — both shoes complete</option></select>';$('camera').parentElement.before(framingWrap,wrap);$('camera').previousElementSibling.textContent='Additional camera direction (optional)';$('camera').parentElement.querySelector('.note').textContent='Choose a preset or describe your own angle. Shoe close-up presets switch framing to both complete shoes; the rest of the body may be outside the image.';
+choices.onchange=()=>{if(preset(choices.value).shoes)$('imageFraming').value='shoes';if(choices.value!=='custom'&&$('camera').value==='Eye level, front three-quarter view')$('camera').value='';generate();};$('imageFraming').onchange=()=>{if($('imageFraming').value==='full'&&preset(choices.value).shoes)choices.value='bug';generate();};
+function apply(){const close=$('imageFraming').value==='shoes',result=$('prompt');const angle=direction(choices.value,$('camera').value);result.textContent=result.textContent.replace(/^Camera angle preference: [^\n]*/m,'Camera angle preference: '+angle);if(close){result.textContent=result.textContent.replace('Create a detailed image of one adult ','Create a detailed close-up of the footwear worn by one adult ').replace(/REQUIRED FRAMING:[\s\S]*?Clear clothing and footwear details, balanced composition\./,'REQUIRED FRAMING: '+shoeRule).replace(/Preserve these features within the required full-body composition; do not zoom in or crop to a portrait\./g,'Keep these identity features consistent wherever visible; the face and upper body need not be shown.').replace(/Keep the complete body and both shoes visible\./g,'Keep both shoes complete; the rest of the body may be cropped.');}const badge=document.querySelector('.result').querySelector('.badge');if(badge)badge.textContent=close?'SHOE CLOSE-UP · BOTH SHOES COMPLETE':'FULL BODY · BOTH SHOES VISIBLE';}
+window.cameraStudio={presets,preset,direction,select,shoeRule,apply};
+})();
