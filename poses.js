@@ -52,9 +52,91 @@ const additions=[
 ['Gestures','Welcoming, open arms','Standing with both arms opened outward in a friendly welcoming gesture, palms visible and shoulders relaxed.'],
 ['Gestures','Hand on chin','Standing thoughtfully with one hand touching the chin, the opposite forearm supporting that elbow and the gaze slightly averted.']
 ];
+additions.push(...[
+  [
+    "Model poses",
+    "Classic S-curve",
+    "Standing in a fashion S-curve with weight on the back leg, the free knee softly bent, hips angled one way and shoulders gently counterbalanced. Arms rest naturally and the chin stays level."
+  ],
+  [
+    "Model poses",
+    "Runway crossover step",
+    "Walking toward the camera in a deliberate runway stride, the leading foot placed just across the center line, hips moving naturally and arms swinging subtly. Shoulders stay back and the gaze is confident."
+  ],
+  [
+    "Model poses",
+    "Runway end-of-walk",
+    "Paused at the end of a runway with one foot forward, weight settled into the back hip, shoulders square and one hand resting lightly on the waist. Looking directly ahead."
+  ],
+  [
+    "Model poses",
+    "Three-quarter fashion stance",
+    "Standing at a three-quarter angle to the camera with the front knee relaxed, one foot slightly forward and the shoulders turned gently toward the lens to show the outfit silhouette."
+  ],
+  [
+    "Model poses",
+    "Crossed-ankle standing",
+    "Standing with ankles lightly crossed, weight supported by the rear leg, torso elongated and hands resting loosely beside the body. Keep the feet slightly offset so the footwear is distinguishable."
+  ],
+  [
+    "Model poses",
+    "One leg extended",
+    "Standing on one supporting leg with the other leg extended diagonally to the side, toe touching the floor, torso tall and one hand resting lightly at the waist."
+  ],
+  [
+    "Model poses",
+    "Jacket over shoulder",
+    "Standing with a jacket draped over one shoulder and held at its collar by the same-side hand. The other hand rests at the hip, with feet staggered and head turned slightly toward the camera."
+  ],
+  [
+    "Model poses",
+    "Holding lapels",
+    "Standing with feet comfortably staggered and both hands lightly holding the lapels or front edges of the selected top. Elbows angle outward slightly and the torso remains upright."
+  ],
+  [
+    "Model poses",
+    "Hands framing the waist",
+    "Standing with both hands placed lightly at the sides of the waist, elbows angled back, one hip shifted outward and one knee relaxed to emphasize the garment silhouette."
+  ],
+  [
+    "Model poses",
+    "Collarbone touch",
+    "Standing at a slight angle with one hand resting lightly near the collarbone, the opposite arm relaxed and the head tilted subtly toward the raised hand. Shoulders stay low."
+  ],
+  [
+    "Model poses",
+    "Hand through hair",
+    "Standing with one hand lifted into or over the hair near the crown, elbow angled outward, opposite hand relaxed and weight shifted naturally onto one leg."
+  ],
+  [
+    "Model poses",
+    "Editorial asymmetric arms",
+    "Standing in an angular editorial pose with one elbow raised beside the head, the other forearm crossing loosely in front of the waist, feet apart and hips subtly counterbalanced."
+  ],
+  [
+    "Model poses",
+    "Back view, outfit reveal",
+    "Standing with the back facing the camera to show the rear of the outfit, feet staggered, one hand resting at the waist and head turned gently into a three-quarter profile."
+  ],
+  [
+    "Model poses",
+    "Seated editorial, long leg line",
+    "Sitting near the front of a chair at a three-quarter angle, one knee bent with the foot grounded and the other leg extended diagonally forward. One hand rests on the chair edge and the other on the thigh."
+  ],
+  [
+    "Model poses",
+    "Seated sideways, shoulder turn",
+    "Sitting sideways on a simple stool with feet offset on the floor, torso turned toward the camera and one shoulder slightly lowered. Hands rest lightly together on the upper thigh."
+  ],
+  [
+    "Model poses",
+    "Wall lean, bent knee",
+    "Leaning one shoulder against a wall with the outside leg straight, the other knee bent and its toe resting on the floor. One hand rests near the waist while the other hangs loosely, creating a relaxed fashion silhouette."
+  ]
+]);
 const poses=originalLabels.map((label,id)=>({id:String(id),label,category:originalCategories[id],description:poseDescriptions[id]}));
 for(const [category,label,description] of additions){const id=String(poseDescriptions.length);poseDescriptions.push(description);poses.push({id,label,category,description});}
-const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures'];
+const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses'];
 const field=document.querySelector('.poses'),grid=field.querySelector('.pose-grid');field.querySelector('.note').textContent='Browse a category or search by name. Your selected pose stays selected while you browse.';
 const filters=document.createElement('div');filters.className='pose-filters fields';filters.innerHTML='<div><label for="poseCategory">Pose category</label><select id="poseCategory"></select></div><div><label for="poseSearch">Find a pose</label><input id="poseSearch" type="search" placeholder="e.g. crossed legs, boxing, leaning"></div>';grid.before(filters);
 const category=document.getElementById('poseCategory'),search=document.getElementById('poseSearch');category.add(new Option('All categories',''));for(const name of categories)category.add(new Option(name,name));category.value='Standing';
