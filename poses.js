@@ -134,9 +134,91 @@ additions.push(...[
     "Leaning one shoulder against a wall with the outside leg straight, the other knee bent and its toe resting on the floor. One hand rests near the waist while the other hangs loosely, creating a relaxed fashion silhouette."
   ]
 ]);
+additions.push(...[
+  [
+    "Dominant poses",
+    "Commanding stance",
+    "Standing squarely with feet shoulder-width apart, shoulders back, spine tall and chin level. Both arms rest firmly at the sides, with a steady, direct gaze and a composed, authoritative expression."
+  ],
+  [
+    "Dominant poses",
+    "Hands-on-hips power stance",
+    "Standing with feet planted wide, both hands resting firmly on the hips and elbows angled outward. The chest is open, shoulders relaxed and gaze unwavering."
+  ],
+  [
+    "Dominant poses",
+    "Arms crossed, steady gaze",
+    "Standing with arms firmly crossed over the chest, feet slightly apart and weight evenly balanced. The head remains level with a direct, measured gaze and a calm, assertive expression."
+  ],
+  [
+    "Dominant poses",
+    "Hands clasped behind back",
+    "Standing tall with feet comfortably apart and both hands clasped behind the lower back. Shoulders are drawn gently back, chin slightly lifted and expression controlled and confident."
+  ],
+  [
+    "Dominant poses",
+    "One hand on waist",
+    "Standing with one hand placed firmly at the waist, the opposite arm relaxed and one foot slightly forward. The torso faces the viewer with a poised, self-assured expression."
+  ],
+  [
+    "Dominant poses",
+    "Leaning on a desk",
+    "Standing behind a desk with both palms braced on its edge, arms extended and torso leaning slightly forward. Feet remain firmly planted while the head stays raised with a focused, commanding gaze."
+  ],
+  [
+    "Dominant poses",
+    "One hand braced on a table",
+    "Standing beside a table with one palm resting firmly on its surface, the other hand at the hip and feet staggered. The body is upright with a slight forward inclination and a composed, assertive expression."
+  ],
+  [
+    "Dominant poses",
+    "Chair, authoritative posture",
+    "Sitting squarely in a chair with the back upright, knees comfortably apart and both feet planted. Forearms rest on the armrests, shoulders remain open and the gaze is direct and composed."
+  ],
+  [
+    "Dominant poses",
+    "Chair, crossed legs and armrest",
+    "Sitting back in a chair with legs crossed at the knees, one forearm resting along an armrest and the other hand relaxed on the upper knee. The head is held high with a calm, self-assured expression."
+  ],
+  [
+    "Dominant poses",
+    "Chair, leaning forward",
+    "Sitting on the front edge of a chair with feet firmly planted, elbows resting on the thighs and hands loosely clasped between the knees. The head is raised with an attentive, intense gaze."
+  ],
+  [
+    "Dominant poses",
+    "Steepled fingers",
+    "Sitting upright in a chair with elbows supported on the armrests and fingertips lightly touching in a steeple at mid-chest. Shoulders remain relaxed and the expression thoughtful, controlled and authoritative."
+  ],
+  [
+    "Dominant poses",
+    "Stop gesture",
+    "Standing firmly with one arm extended forward at chest height, palm open and facing outward in a clear stop gesture. The opposite hand rests at the side and the face shows calm determination."
+  ],
+  [
+    "Dominant poses",
+    "Pointing with authority",
+    "Standing in a stable stance with one arm extended to indicate a direction, index finger pointing clearly and the opposite hand resting at the waist. The gaze follows the gesture with a decisive expression."
+  ],
+  [
+    "Dominant poses",
+    "Beckoning gesture",
+    "Standing upright with one hand held forward at waist height, palm upward and fingers gently curled in a deliberate beckoning gesture. The opposite arm rests naturally, with a steady gaze and confident posture."
+  ],
+  [
+    "Dominant poses",
+    "Purposeful approach",
+    "Walking forward with a deliberate, measured stride, shoulders back and arms moving minimally at the sides. The head remains level, gaze fixed ahead and expression resolute."
+  ],
+  [
+    "Dominant poses",
+    "Side-on, commanding shoulder turn",
+    "Standing mostly side-on with feet staggered and one hand behind the back, turning the shoulders and head toward the viewer. The posture is tall and still, with a steady, self-possessed gaze."
+  ]
+]);
 const poses=originalLabels.map((label,id)=>({id:String(id),label,category:originalCategories[id],description:poseDescriptions[id]}));
 for(const [category,label,description] of additions){const id=String(poseDescriptions.length);poseDescriptions.push(description);poses.push({id,label,category,description});}
-const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses'];
+const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses'];
 const field=document.querySelector('.poses'),grid=field.querySelector('.pose-grid');field.querySelector('.note').textContent='Browse a category or search by name. Your selected pose stays selected while you browse.';
 const filters=document.createElement('div');filters.className='pose-filters fields';filters.innerHTML='<div><label for="poseCategory">Pose category</label><select id="poseCategory"></select></div><div><label for="poseSearch">Find a pose</label><input id="poseSearch" type="search" placeholder="e.g. crossed legs, boxing, leaning"></div>';grid.before(filters);
 const category=document.getElementById('poseCategory'),search=document.getElementById('poseSearch');category.add(new Option('All categories',''));for(const name of categories)category.add(new Option(name,name));category.value='Standing';
