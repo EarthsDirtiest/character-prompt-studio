@@ -217,9 +217,72 @@ additions.push(...[
   ]
 ]);
 additions.push(["Standing","Forward bend, crossed legs, hands behind back","Standing with both legs straight and crossed, one leg placed diagonally in front of the other, with both feet resting on the floor. Keep the knees straight without locking them. Bend the upper body forward from the hips while maintaining the crossed-leg position and a long, aligned spine. Hold both hands together behind the lower back, with the arms kept behind the torso throughout the pose. Keep the shoulders relaxed and the head naturally aligned with the spine. Use a three-quarter angle that clearly shows the forward bend, crossed straight legs, and hands behind the back."]);
+originalCategories[13]='Riding crop';
+additions.push(...[
+  [
+    "Riding crop",
+    "Crop held at the side",
+    "Standing upright with feet slightly staggered, holding a riding crop loosely by its handle in one hand beside the thigh, with the shaft pointing down toward the ground. The opposite arm rests naturally and the gaze is composed."
+  ],
+  [
+    "Riding crop",
+    "Crop across both palms",
+    "Standing squarely with shoulders relaxed, holding a riding crop horizontally across both open palms at waist height. Hands are spaced along the shaft so its handle, slender length, and flat tip are clearly distinguishable."
+  ],
+  [
+    "Riding crop",
+    "Crop behind back, square stance",
+    "Standing with feet shoulder-width apart and both hands behind the lower back, holding a riding crop horizontally in both hands. Turn the body to a rear three-quarter angle so the crop and hand placement are clearly visible, with the head turned gently toward the viewer."
+  ],
+  [
+    "Riding crop",
+    "Crop over one shoulder",
+    "Standing in a relaxed three-quarter stance with a riding crop held by its handle near one shoulder. The shaft rests lightly across that shoulder, extending behind the upper back, while the opposite hand rests at the waist."
+  ],
+  [
+    "Riding crop",
+    "Upright crop, hands together",
+    "Standing tall with both hands loosely together around the handle of a riding crop at mid-torso, the shaft held upright beside the shoulder and its flat tip pointing upward. Elbows stay close to the body and shoulders remain relaxed."
+  ],
+  [
+    "Riding crop",
+    "Crop held diagonally across torso",
+    "Standing with weight on one leg, holding a riding crop diagonally across the front of the torso. One hand grips the handle near the hip and the other lightly supports the shaft near chest height, without bending it."
+  ],
+  [
+    "Riding crop",
+    "One hand on hip, crop lowered",
+    "Standing with one hand firmly at the hip and the opposite hand holding a riding crop beside the outer thigh, shaft angled slightly away from the leg and tip pointing downward. Keep the chin level and the expression self-assured."
+  ],
+  [
+    "Riding crop",
+    "Walking with crop at side",
+    "Walking in a measured natural stride with a riding crop held low beside one thigh, handle gripped lightly and tip angled downward. The free arm swings naturally and the shoulders remain upright."
+  ],
+  [
+    "Riding crop",
+    "Chair, crop across lap",
+    "Sitting upright in a chair with both feet planted and a riding crop resting horizontally across the lap. Both hands rest lightly on the crop near its ends, with relaxed shoulders and a direct, composed gaze."
+  ],
+  [
+    "Riding crop",
+    "Chair, crossed legs and crop",
+    "Sitting in a chair with legs crossed at the knees and a riding crop held horizontally just above the upper thigh. One hand grips its handle and the other lightly supports the shaft, while the torso stays comfortably upright."
+  ],
+  [
+    "Riding crop",
+    "Seated sideways, crop lowered",
+    "Sitting sideways on a stool with feet offset on the floor, turning the shoulders toward the viewer. Hold a riding crop in the near hand beside the stool, shaft pointing downward, while the opposite hand rests on the upper thigh."
+  ],
+  [
+    "Riding crop",
+    "Wall lean with crop",
+    "Leaning one shoulder lightly against a wall with one knee relaxed, holding a riding crop by the handle at hip height with its shaft angled downward across the front of the legs. The other hand rests near the waist and the gaze is calm."
+  ]
+]);
 const poses=originalLabels.map((label,id)=>({id:String(id),label,category:originalCategories[id],description:poseDescriptions[id]}));
 for(const [category,label,description] of additions){const id=String(poseDescriptions.length);poseDescriptions.push(description);poses.push({id,label,category,description});}
-const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses'];
+const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses','Riding crop'];
 const field=document.querySelector('.poses'),grid=field.querySelector('.pose-grid');field.querySelector('.note').textContent='Browse a category or search by name. Your selected pose stays selected while you browse.';
 const filters=document.createElement('div');filters.className='pose-filters fields';filters.innerHTML='<div><label for="poseCategory">Pose category</label><select id="poseCategory"></select></div><div><label for="poseSearch">Find a pose</label><input id="poseSearch" type="search" placeholder="e.g. crossed legs, boxing, leaning"></div>';grid.before(filters);
 const category=document.getElementById('poseCategory'),search=document.getElementById('poseSearch');category.add(new Option('All categories',''));for(const name of categories)category.add(new Option(name,name));category.value='Standing';
