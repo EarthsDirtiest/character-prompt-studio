@@ -216,6 +216,7 @@ additions.push(...[
     "Standing mostly side-on with feet staggered and one hand behind the back, turning the shoulders and head toward the viewer. The posture is tall and still, with a steady, self-possessed gaze."
   ]
 ]);
+additions.push(["Standing","Forward bend, crossed legs, hands behind back","Standing with both legs straight and crossed, one leg placed diagonally in front of the other, with both feet resting on the floor. Keep the knees straight without locking them. Bend the upper body forward from the hips while maintaining the crossed-leg position and a long, aligned spine. Hold both hands together behind the lower back, with the arms kept behind the torso throughout the pose. Keep the shoulders relaxed and the head naturally aligned with the spine. Use a three-quarter angle that clearly shows the forward bend, crossed straight legs, and hands behind the back."]);
 const poses=originalLabels.map((label,id)=>({id:String(id),label,category:originalCategories[id],description:poseDescriptions[id]}));
 for(const [category,label,description] of additions){const id=String(poseDescriptions.length);poseDescriptions.push(description);poses.push({id,label,category,description});}
 const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses'];
