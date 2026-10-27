@@ -23,7 +23,7 @@ Open index.html in a desktop browser, keeping the JavaScript and CSS files besid
 
 ## Character presets
 
-In Character, choose a categorized preset and Load character & closet. The starter
+In Presets & saved, choose a categorized preset and Load character & closet. The starter
 library includes four adult K/DA adaptations with POP/STARS and ALL OUT wardrobes,
 plus eight adult The Witcher adaptations with classic and alternate starter looks.
 Resident Evil adds twelve adult profiles and twenty-six game-labeled wardrobes: Jill,
@@ -37,15 +37,28 @@ receive the requested heel corrections: Ciri/Yennefer 7–9 cm, and Triss’s se
 boots 4–6 cm wedges. Custom heel overrides are preserved.
 The first load adds a character and its detailed garments to this browser only.
 Later loads reuse the saved character; Create a fresh copy preserves edited versions.
-Detailed physical traits are editable in Face & appearance. Known-character names
+Detailed physical traits are editable in Face. Known-character names
 remain library labels; generated prompts use explicit descriptive features and
 photorealistic rendering instructions. Source artwork links are listed in each preset.
 
 
 ## Appearance
 
-Use Appearance in the top navigation to choose Forest, Midnight, Plum, Burgundy,
-Slate, or Paper (light), and optionally choose a custom accent using the color wheel.
+Use Theme in the top navigation to choose Workshop (blue), Forest, Midnight, Plum,
+Burgundy, Slate, or Paper (light), and optionally choose a custom accent using the color wheel.
 Text contrast adjusts automatically. Preferences persist in this browser and are
 independent of character data, clothing colors, and project backups. Restore original
-colors returns to the original Forest theme.
+colors returns to the Workshop theme.
+
+## Studio layout
+
+The responsive studio uses category navigation, a focused editor, and a persistent
+prompt panel on desktop. On phones, use the horizontal categories or Menu drawer;
+Prompt opens the full prompt sheet and Copy remains available at the bottom.
+Garment cards show their selections when collapsed. All garment details and randomizer
+locks remain available in their advanced sections. Color swatches and attribute chips
+operate the original controls. Theme choices and custom accent preferences are retained.
+
+Use Presets & saved > My saved characters to save and load. Quick builder, saves, and
+Backup & restore are also accessible through the Menu drawer. Closet, Scenes, and Tools
+retain their own editors, prompt views, and existing saved-data formats.
