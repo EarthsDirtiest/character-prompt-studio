@@ -28,3 +28,11 @@ html[data-ui-theme] body.studio-redesigned .studio-garment-heading h3{color:var(
 html[data-ui-theme] body.studio-redesigned .lock-label{color:var(--ui-muted)!important}
 .studio-redesigned .studio-core-locks{display:flex;flex-wrap:wrap;gap:8px 16px;border-top:1px solid var(--ui-edge);padding-top:12px;margin-top:14px;grid-column:1/-1}.studio-redesigned .studio-swatches .color-wheel-label{margin:0!important;min-width:0}.studio-redesigned .studio-swatches .color-wheel-label>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.studio-redesigned .studio-swatches input[type=color]{width:32px;height:30px;min-height:30px;padding:2px}.studio-redesigned .studio-swatches{gap:8px;flex-wrap:wrap}.studio-redesigned .studio-garment-card{padding:14px}.studio-redesigned .studio-garment-heading{margin-bottom:12px}.studio-redesigned .studio-card-selection{font-size:11px}.studio-redesigned .studio-garment-core .color-override-toggle{margin-bottom:7px}.studio-redesigned .studio-garment-core .color-trigger{font-size:12px}.studio-redesigned .studio-garment-core .color-sample{width:17px;height:17px}.studio-redesigned .studio-advanced{margin-top:12px;padding-top:10px}
 @media(max-width:760px){.studio-redesigned .studio-swatches input[type=color]{width:44px;height:42px;min-height:42px}.studio-redesigned .studio-swatches{gap:8px}.studio-redesigned .studio-card-selection{font-size:12px}}
+/* Constrain desktop workspace rows so long editors scroll inside the available height. */
+@media(min-width:761px){
+.studio-redesigned .closet-grid,.studio-redesigned .tools-grid{flex:1 1 0px;grid-template-rows:minmax(0,1fr);overflow:hidden}
+.studio-redesigned .closet-start{flex-shrink:0}
+}
+@media(min-width:761px){
+.studio-redesigned #closetContent:not([hidden]){display:flex;flex-direction:column;flex:1 1 0px;min-height:0;overflow:hidden}
+}
