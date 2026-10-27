@@ -30,9 +30,9 @@ html[data-ui-theme] body.studio-redesigned .lock-label{color:var(--ui-muted)!imp
 @media(max-width:760px){.studio-redesigned .studio-swatches input[type=color]{width:44px;height:42px;min-height:42px}.studio-redesigned .studio-swatches{gap:8px}.studio-redesigned .studio-card-selection{font-size:12px}}
 /* Constrain desktop workspace rows so long editors scroll inside the available height. */
 @media(min-width:761px){
+html[data-studio-layout=workshop]{height:100%;overflow:clip}
+.studio-redesigned{position:fixed;inset:0;overflow:clip}
+.studio-redesigned #closetContent:not([hidden]){display:flex;flex-direction:column;flex:1 1 0px;min-height:0;overflow:hidden}
 .studio-redesigned .closet-grid,.studio-redesigned .tools-grid{flex:1 1 0px;grid-template-rows:minmax(0,1fr);overflow:hidden}
 .studio-redesigned .closet-start{flex-shrink:0}
-}
-@media(min-width:761px){
-.studio-redesigned #closetContent:not([hidden]){display:flex;flex-direction:column;flex:1 1 0px;min-height:0;overflow:hidden}
 }
