@@ -1,0 +1,29 @@
+/* Consistent UI colors; garment/palette swatches deliberately keep their own colors. */
+html[data-ui-theme],html[data-ui-theme] body{background:var(--ui-bg)!important;color:var(--ui-text)!important}
+html[data-ui-theme] :is(.panel,.backup-access,.character-preset-library,.mobile-summary-sheet,.mobile-summary-header,.tools-result .actions,.quick-builder-dialog,.quick-builder-dialog header,.quick-builder-dialog footer,.palette-list,.color-list,.custom-presets-panel,.custom-preset-dialog,#quickBuilderDialog,.qb-footer){background:var(--ui-panel)!important;color:var(--ui-text)!important;border-color:var(--ui-edge)!important}
+html[data-ui-theme] :is(.result,.closet-result,.closet-item-card,.selection-card,.appearance-theme-preview){background:var(--ui-raised)!important;color:var(--ui-text)!important;border-color:var(--ui-edge)!important}
+html[data-ui-theme] :is(select,input:not([type=color]):not([type=checkbox]):not([type=radio]),textarea,.pose-content,.color-trigger,.color-choice-trigger,.qb-option,.palette-menu>button){background:var(--ui-field)!important;color:var(--ui-text)!important;border-color:var(--ui-edge)!important}
+html[data-ui-theme] button{color:var(--ui-text)!important;border-color:var(--ui-edge)}
+html[data-ui-theme] button:hover{background:var(--ui-raised)}
+html[data-ui-theme] :is(.note,.muted,header p,footer,.selection-detail,.outfit-card span,.closet-summary-person p,.closet-item-pick small,.outfit-item-slot small,.slot-label,.closet-browser-count,.closet-browser-empty,.history-card small,.color-wheel-label,.section-nav button,.mobile-summary-row .note,.section-summary,#qbHint,#qbFooterNote,#qbNameGroup label>span){color:var(--ui-muted)!important}
+html[data-ui-theme] :is(.eyebrow,.step,.badge,summary,.advanced-settings-box>h3,.preset-photo-note,.selection-label,.mobile-summary-row strong,.selection-card h3,.lock-label,.qb-brand,#qbStep,.qb-review-row strong,.qb-review-row em,a){color:var(--ui-accent-text)!important}
+html[data-ui-theme] :is(header,.divider,.clothing-advanced,.advanced-settings-box,.preset-identity,.extra-item-editor,.closet-editor-section,.closet-cast,.closet-summary-person,.garment-shelf,.closet-item-favorite,.history-card,.builder-toolbar,.section-nav,.result-switch,.mobile-summary-row,.scene-pose-tools,.outfit-library-drawer){border-color:var(--ui-edge)!important}
+html[data-ui-theme] :is(button[aria-pressed=true],.color-option[aria-selected=true],.color-choice-row[aria-selected=true],.closet-item-card[data-selected=true],.palette-option[aria-selected=true],.pose-card input:checked+.pose-content){background:var(--ui-raised)!important;color:var(--ui-text)!important;border-color:var(--ui-accent-text)!important;box-shadow:inset 0 -2px var(--ui-accent-text)!important}
+html[data-ui-theme] :is(.primary,.fixed-copy-bar .primary){background:var(--ui-accent)!important;color:var(--ui-accent-ink)!important;border-color:var(--ui-accent-text)!important}
+html[data-ui-theme] .primary:hover{filter:brightness(1.08)}
+html[data-ui-theme] :is(input,select,textarea,button):focus-visible{outline-color:var(--ui-accent-text)!important}
+html[data-ui-theme] :is(input[type=checkbox],input[type=radio]){accent-color:var(--ui-accent)}
+html[data-ui-theme] input::placeholder,html[data-ui-theme] textarea::placeholder{color:var(--ui-muted)!important;opacity:.8}
+html[data-ui-theme] :is(.fixed-copy-bar,.studio-tabs,.quick-builder-footer){background:var(--ui-panel)!important;border-color:var(--ui-edge)!important}
+html[data-ui-theme] :is(#status,#quickCopyStatus){color:var(--ui-accent-text)!important}
+.appearance-open{margin-left:auto;white-space:nowrap}
+html[data-ui-theme] .appearance-dialog{width:min(460px,calc(100vw - 24px));max-height:calc(100dvh - 32px);overflow:auto;padding:22px;border:1px solid var(--ui-edge);border-radius:16px;background:var(--ui-panel);color:var(--ui-text);box-shadow:0 24px 90px #0008}
+.appearance-dialog::backdrop{background:#0009;backdrop-filter:blur(3px)}
+.appearance-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.appearance-heading h2{margin:0}.appearance-dialog>.note{margin:12px 0 18px}.appearance-theme-preview{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 12px;border-radius:10px;border:1px solid var(--ui-edge);margin:14px 0}.appearance-preview-chip{padding:6px 10px;border-radius:6px;background:var(--ui-accent);color:var(--ui-accent-ink);font-size:12px;font-weight:600}.appearance-accent{display:grid;grid-template-columns:1fr 56px 90px;align-items:center;gap:10px;margin:12px 0}.appearance-accent label{margin:0}.appearance-accent input{width:56px;height:42px;padding:3px}.appearance-accent output{font:13px ui-monospace,monospace;color:var(--ui-muted)}.appearance-dialog .actions{margin-top:18px;justify-content:space-between}.appearance-dialog [role=status]{min-height:1.5em;margin-bottom:0}
+@media(max-width:760px){.studio-tabs .appearance-open{flex:0 0 auto}.appearance-dialog{padding:18px!important}.appearance-dialog button,.appearance-dialog select{min-height:44px}.appearance-accent input{min-height:44px}}
+
+html[data-ui-theme] :is(.selection-main,.prompt){color:var(--ui-text)!important}
+html[data-ui-theme] :is(.palette-menu>button,.color-trigger):after{color:var(--ui-accent-text)!important}
+html[data-ui-theme] :is(.qb-progress span){background:var(--ui-accent)!important}
+html[data-ui-theme] :is(.qb-progress){background:var(--ui-raised)!important}
+html[data-ui-theme] :is(#libraryMessage,#compatibilityMessage){color:var(--ui-accent-text)!important}

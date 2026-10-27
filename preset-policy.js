@@ -4,14 +4,14 @@ const $=id=>document.getElementById(id),form=$('builder');
 let profiles=[];
 function registerProfiles(records){profiles=Array.isArray(records)?records:[];}
 registerProfiles((window.characterPresetCatalog?.categories||[]).flatMap(category=>category.characters||[]));
-const groupAliases=['K/DA','KDA','League of Legends'];
+const groupAliases=[...new Set(['K/DA','KDA','League of Legends',...(window.characterPresetCatalog?.categories||[]).flatMap(category=>category.referenceAliases||[])])].sort((a,b)=>b.length-a.length);
 function currentControls(){return {presetProfileId:$('presetProfileId')?.value||'',presetIdentityEnabled:!!$('presetIdentityEnabled')?.checked,presetIdentityText:$('presetIdentityText')?.value||''};}
 function enabled(controls=currentControls()){return typeof controls?.presetProfileId==='string'&&!!controls.presetProfileId.trim();}
 function profile(controls){return profiles.find(record=>record.id===controls.presetProfileId);}
 function aliases(controls){const record=profile(controls),id=String(controls?.presetProfileId||'').toLowerCase(),names=record?[record.name,...(record.aliases||[])]:[];if(id.includes('ahri'))names.push('Ahri');if(id.includes('akali'))names.push('Akali');if(id.includes('evelynn'))names.push('Evelynn');if(id.includes('kaisa')||id.includes('kai-sa')||id.includes('kai_sa'))names.push("Kai'Sa",'Kai’Sa','Kaisa','Kai Sa');return [...new Set(names.filter(Boolean))];}
 function escape(value){return String(value).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
 function replaceAlias(text,alias,replacement){const pattern=new RegExp('(^|[^A-Za-z0-9])'+escape(alias)+'(?=$|[^A-Za-z0-9])','gi');return text.replace(pattern,(_,prefix)=>prefix+replacement);}
-function scrubGroup(text){for(const alias of groupAliases)text=replaceAlias(text,alias,alias.toLowerCase().includes('league')?'the described setting':'the described group');return text;}
+function scrubGroup(text){for(const alias of groupAliases)text=replaceAlias(text,alias,/league|witcher|wild hunt/i.test(alias)?'the described setting':'the described group');return text;}
 function sanitize(text,controls=currentControls(),label='the described adult'){let result=String(text||'');if(!enabled(controls))return result;for(const alias of aliases(controls).sort((a,b)=>b.length-a.length))result=replaceAlias(result,alias,label);return scrubGroup(result);}
 const photoRule='PHOTOREALISTIC RENDERING: Render this described adult as a lifelike photographic subject with natural human proportions, realistic skin texture, individual hair strands, believable fabric and material response, and physically plausible lighting. Render any explicitly described fantasy anatomy with the same photographic realism. Use the physical and clothing descriptions provided here as the complete visual specification; do not use named-character, franchise, album, or online references. Do not browse or search the web for a reference.';
 function photoStyle(text){return text.replace(/image style:\s*[^;\n]+/gi,'image style: Photorealistic photography');}

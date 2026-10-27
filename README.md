@@ -24,9 +24,19 @@ Open index.html in a desktop browser, keeping the JavaScript and CSS files besid
 ## Character presets
 
 In Character, choose a categorized preset and Load character & closet. The starter
-library includes four adult K/DA adaptations with POP/STARS and ALL OUT wardrobes.
+library includes four adult K/DA adaptations with POP/STARS and ALL OUT wardrobes,
+plus eight adult The Witcher 3 adaptations with classic and alternate starter looks.
 The first load adds a character and its detailed garments to this browser only.
 Later loads reuse the saved character; Create a fresh copy preserves edited versions.
 Detailed physical traits are editable in Face & appearance. Known-character names
 remain library labels; generated prompts use explicit descriptive features and
 photorealistic rendering instructions. Source artwork links are listed in each preset.
+
+
+## Appearance
+
+Use Appearance in the top navigation to choose Forest, Midnight, Plum, Burgundy,
+Slate, or Paper (light), and optionally choose a custom accent using the color wheel.
+Text contrast adjusts automatically. Preferences persist in this browser and are
+independent of character data, clothing colors, and project backups. Restore original
+colors returns to the original Forest theme.
