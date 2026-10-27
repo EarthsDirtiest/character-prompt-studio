@@ -8,7 +8,7 @@ const commonTops=['Knit sweater','Plain T-shirt','Button-down shirt','Polo shirt
 const feminineTops=['Blouse','Camisole','Wrap top','Peplum top','Crop top','Tunic','Bodysuit','Ballet leotard','Corset','Underbust corset','Dress','Shirt dress','Wrap dress','Slip dress','Sweater dress','A-line dress','Bodycon dress','Maxi dress','Evening gown'];
 const commonBottoms=['Trousers','Jeans','Chinos','Cargo trousers','Joggers','Sweatpants','Track pants','Linen trousers','Shorts','Cargo shorts','Bermuda shorts','Cycling shorts','Leggings'];
 const feminineBottoms=['Pencil skirt','A-line skirt','Pleated skirt','Wrap skirt','Denim skirt','Mini skirt','Midi skirt','Maxi skirt','Circle skirt','Slip skirt','Skort','Culottes','Palazzo trousers','Ballet tutu'];
-window.fullBodyTopStyles=['Jumpsuit','Romper','Overalls','Boiler suit','Robe','Dress','Shirt dress','Wrap dress','Slip dress','Sweater dress','A-line dress','Bodycon dress','Maxi dress','Evening gown'];
+window.fullBodyTopStyles=['Bodysuit','Ballet leotard','Jumpsuit','Romper','Overalls','Boiler suit','Robe','Dress','Shirt dress','Wrap dress','Slip dress','Sweater dress','A-line dress','Bodycon dress','Maxi dress','Evening gown'];
 const tops=[...commonTops,...feminineTops],bottoms=[...commonBottoms,...feminineBottoms];
 definitions.find(([id])=>id==='top')[2]=tops;definitions.find(([id])=>id==='bottom')[2]=bottoms;
 wardrobeOptions.Man.top=[...commonTops];wardrobeOptions.Woman.top=[...tops];wardrobeOptions.Man.bottom=[...commonBottoms];wardrobeOptions.Woman.bottom=[...bottoms];

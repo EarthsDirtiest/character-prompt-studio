@@ -20,3 +20,13 @@ it on the published site. Keep personal backup files outside this repository.
 ## Local use
 
 Open index.html in a desktop browser, keeping the JavaScript and CSS files beside it.
+
+## Character presets
+
+In Character, choose a categorized preset and Load character & closet. The starter
+library includes four adult K/DA adaptations with POP/STARS and ALL OUT wardrobes.
+The first load adds a character and its detailed garments to this browser only.
+Later loads reuse the saved character; Create a fresh copy preserves edited versions.
+Detailed physical traits are editable in Face & appearance. Known-character names
+remain library labels; generated prompts use explicit descriptive features and
+photorealistic rendering instructions. Source artwork links are listed in each preset.
