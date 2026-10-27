@@ -25,7 +25,11 @@ Open index.html in a desktop browser, keeping the JavaScript and CSS files besid
 
 In Character, choose a categorized preset and Load character & closet. The starter
 library includes four adult K/DA adaptations with POP/STARS and ALL OUT wardrobes,
-plus eight adult The Witcher 3 adaptations with classic and alternate starter looks.
+plus eight adult The Witcher adaptations with classic and alternate starter looks.
+The Witcher category includes second-game wardrobes for Geralt, Triss and Dandelion.
+Starting-look names identify The Witcher 2 or The Witcher 3. Loading an existing preset
+or opening its preset closet adds missing starter looks while preserving edited
+identities, existing garments and outfits.
 The first load adds a character and its detailed garments to this browser only.
 Later loads reuse the saved character; Create a fresh copy preserves edited versions.
 Detailed physical traits are editable in Face & appearance. Known-character names
