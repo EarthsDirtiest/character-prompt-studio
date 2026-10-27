@@ -26,10 +26,15 @@ Open index.html in a desktop browser, keeping the JavaScript and CSS files besid
 In Character, choose a categorized preset and Load character & closet. The starter
 library includes four adult K/DA adaptations with POP/STARS and ALL OUT wardrobes,
 plus eight adult The Witcher adaptations with classic and alternate starter looks.
+Resident Evil adds twelve adult profiles and twenty-six game-labeled wardrobes: Jill,
+Claire, Ada, Leon, Chris, Rebecca, Sheva, Carlos, Wesker, Ashley, adult Sherry, and
+Lady Dimitrescu. Outfit eras share the selected adult identity and hairstyle.
 The Witcher category includes second-game wardrobes for Geralt, Triss and Dandelion.
 Starting-look names identify The Witcher 2 or The Witcher 3. Loading an existing preset
 or opening its preset closet adds missing starter looks while preserving edited
-identities, existing garments and outfits.
+identities, existing garments and outfits. Known original Witcher preset shoes also
+receive the requested heel corrections: Ciri/Yennefer 7–9 cm, and Triss’s second-game
+boots 4–6 cm wedges. Custom heel overrides are preserved.
 The first load adds a character and its detailed garments to this browser only.
 Later loads reuse the saved character; Create a fresh copy preserves edited versions.
 Detailed physical traits are editable in Face & appearance. Known-character names
