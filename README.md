@@ -100,3 +100,12 @@ rendering instructions while preserving character identity, clothing specificati
 pose geometry and custom text. Detailed restores the original generated text.
 Copy and export use the displayed version; saved history keeps its original text.
 The preference is saved locally and does not change character or outfit data.
+
+
+## Image orientation
+
+Camera & style in the builder and Scenes includes Portrait (2:3), Landscape (3:2),
+and Square (1:1). The prompt includes the selected canvas shape and width:height
+aspect ratio in both Compact and Detailed modes. Orientation is saved with the
+character or scene, independently of the camera angle and full-body/POV framing.
+Surprise me keeps the selected orientation. Existing saves default to Portrait.
