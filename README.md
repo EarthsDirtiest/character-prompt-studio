@@ -64,10 +64,11 @@ Backup & restore are also accessible through the Menu drawer. Closet, Scenes, an
 retain their own editors, prompt views, and existing saved-data formats.
 
 
-## Braided riding crop poses
+## Cat o nine poses
 
-Pose & expression > Braided crop includes fifteen braided riding crop
-poses. Braided crop appears immediately after Riding crop in the category list. Search “braided” to find them. “Braided crop — crossed legs, looking back”
-is a close variation of the original over-shoulder pose, with straight crossed
-legs and the crop held horizontally behind the lower back. Existing pose IDs
-remain unchanged, including poses referenced by saved characters and scenes.
+Pose & expression > Cat o nine includes fifteen cat-o’-nine-tails whip poses,
+with a short handle and nine flexible leather tails. The category appears
+immediately after Riding crop. “Cat o nine — crossed legs, looking back”
+keeps the original straight crossed-leg stance and shoulder turn, with the whip
+held behind the lower back. These replace the previously named braided crop
+poses at the same numeric IDs, preserving saved character and scene selections.

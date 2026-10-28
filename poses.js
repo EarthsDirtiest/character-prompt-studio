@@ -442,84 +442,84 @@ additions.push(...[
 // Appended to preserve every previously saved numeric pose ID.
 additions.push(...[
   [
-    "Braided crop",
-    "Braided crop — crossed legs, looking back",
-    "Standing with the torso rotated partly away and the left shoulder set back. Keep both legs straight and crossed, with one foot placed diagonally behind the other and both feet resting on the floor. Shift the hips gently backward while inclining the upper body slightly forward. Hold a short braided leather riding crop horizontally behind the lower back at the upper hips, gripping it with both hands near its ends, with the arms extended down behind the body. Turn the head back over the left shoulder with a steady gaze and a subtle, confident smile."
+    "Cat o nine",
+    "Cat o nine — crossed legs, looking back",
+    "Standing with the torso rotated partly away and the left shoulder set back. Keep both legs straight and crossed, with one foot placed diagonally behind the other and both feet resting on the floor. Shift the hips gently backward while inclining the upper body slightly forward. Hold a cat-o'-nine-tails whip with a short handle and nine flexible leather tails behind the lower back at the upper hips. Keep both hands separated along a horizontal line behind the body: one grips the handle while the other loosely gathers the tails, with their free lengths hanging naturally below the hands. Turn the head back over the left shoulder with a steady gaze and a subtle, confident smile."
   ],
   [
-    "Braided crop",
-    "Braided crop — low across the back",
-    "Standing tall with feet comfortably apart, shoulders gently drawn back and both elbows softly bent. Hold a short braided leather riding crop horizontally across the lower back in both hands, with the handle near one hip and the tip near the other. Keep the torso upright and the chin level."
+    "Cat o nine",
+    "Cat o nine — low across the back",
+    "Standing tall with feet comfortably apart, shoulders gently drawn back and both elbows softly bent. Hold a cat-o'-nine-tails whip with a short handle and nine flexible leather tails behind the lower back. Grip the handle near one hip and loosely gather the folded tails with the other hand near the opposite hip, allowing their loose lengths to drape downward. Keep the torso upright and the chin level."
   ],
   [
-    "Braided crop",
-    "Braided crop — resting on shoulder",
-    "Standing with weight on the back leg and the front knee relaxed. Hold the handle of a short braided leather riding crop beside one shoulder, allowing its shaft to angle back over that shoulder and away from the face. Rest the free hand at the waist, with the head turned slightly toward the raised hand."
+    "Cat o nine",
+    "Cat o nine — resting on shoulder",
+    "Standing with weight on the back leg and the front knee relaxed. Hold the short handle of a cat-o'-nine-tails whip beside one shoulder, with its nine flexible leather tails draped loosely over that shoulder and down the upper back, clear of the face. Rest the free hand at the waist, with the head turned slightly toward the raised hand."
   ],
   [
-    "Braided crop",
-    "Braided crop — diagonal across torso",
-    "Standing with feet staggered and shoulders relaxed. Hold a short braided leather riding crop diagonally across the front of the torso, gripping the handle near one hip while the other hand lightly supports the shaft below the opposite shoulder. Keep the elbows comfortably bent and the gaze directed ahead."
+    "Cat o nine",
+    "Cat o nine — diagonal across torso",
+    "Standing with feet staggered and shoulders relaxed. Hold a cat-o'-nine-tails whip with a short handle and nine flexible leather tails diagonally across the front of the torso. Grip the handle near one hip while the other hand supports a loose bundle of tails below the opposite shoulder, letting their free lengths curve and hang naturally rather than forming a rigid line. Keep the elbows comfortably bent and the gaze directed ahead."
   ],
   [
-    "Braided crop",
-    "Braided crop — vertical beside thigh",
-    "Standing mostly side-on with one foot half a step forward and the torso gently turned outward. Hold a short braided leather riding crop vertically beside the outer thigh, handle gripped at hip height and tip pointing down toward the calf without touching the floor. Rest the free hand behind the opposite hip."
+    "Cat o nine",
+    "Cat o nine — hanging beside thigh",
+    "Standing mostly side-on with one foot half a step forward and the torso gently turned outward. Hold a cat-o'-nine-tails whip by its short handle at hip height beside the outer thigh, with its nine flexible leather tails hanging loosely along the outer leg. Rest the free hand behind the opposite hip and keep the whip relaxed and still."
   ],
   [
-    "Braided crop",
-    "Braided crop — inspecting the braid",
-    "Standing with feet close but not crossed, holding a short braided leather riding crop horizontally in both hands at lower-chest height. Support the shaft with one palm and turn the handle gently with the other hand, looking down at its braided surface with a thoughtful, composed expression."
+    "Cat o nine",
+    "Cat o nine — inspecting the tails",
+    "Standing with feet close but not crossed, holding a cat-o'-nine-tails whip with a short handle and nine flexible leather tails at lower-chest height. Grip the handle in one hand and lift a loose bundle of the tails with the other, looking down at the separate strands with a thoughtful, composed expression. Let the unsupported ends hang naturally."
   ],
   [
-    "Braided crop",
-    "Braided crop — walking shoulder turn",
-    "Taking a measured step with the rear heel beginning to lift, turning the head and upper torso back over one shoulder. Hold a short braided leather riding crop low behind the outer hip in the same-side hand, its shaft angled away from the legs. Let the free arm counterbalance the walking motion naturally."
+    "Cat o nine",
+    "Cat o nine — walking shoulder turn",
+    "Taking a measured step with the rear heel beginning to lift, turning the head and upper torso back over one shoulder. Hold a cat-o'-nine-tails whip by its short handle low behind the outer hip in the same-side hand, with its nine flexible leather tails gathered loosely and hanging clear of the moving legs. Let the free arm counterbalance the walking motion naturally."
   ],
   [
-    "Braided crop",
-    "Braided crop — wall lean, crossed ankles",
-    "Resting the upper back lightly against a wall, with one ankle crossed loosely in front of the supporting leg and both feet grounded. Hold a short braided leather riding crop vertically in front of the body, both hands resting around its handle at waist height. Keep the shoulders low and the expression relaxed."
+    "Cat o nine",
+    "Cat o nine — wall lean, crossed ankles",
+    "Resting the upper back lightly against a wall, with one ankle crossed loosely in front of the supporting leg and both feet grounded. Hold a cat-o'-nine-tails whip with a short handle and nine flexible leather tails in front of the body at waist height. Rest one hand around the handle and the other lightly over that hand, letting all nine tails hang loosely in front of the legs. Keep the shoulders low and the expression relaxed."
   ],
   [
-    "Braided crop",
-    "Braided crop — seated, crossed legs",
-    "Sitting comfortably in a chair with one leg crossed over the other at the knee. Hold a short braided leather riding crop diagonally along the upper thigh with one hand around the handle, while the other forearm rests on an armrest. Sit back with the spine comfortably upright and the head turned slightly to one side."
+    "Cat o nine",
+    "Cat o nine — seated, crossed legs",
+    "Sitting comfortably in a chair with one leg crossed over the other at the knee. Hold the short handle of a cat-o'-nine-tails whip diagonally along the upper thigh with one hand, allowing its nine flexible leather tails to drape over the thigh and down beside the chair. Rest the other forearm on an armrest. Sit back with the spine comfortably upright and the head turned slightly to one side."
   ],
   [
-    "Braided crop",
-    "Braided crop — chair back, folded arms",
-    "Sitting facing the backrest of a sturdy chair, with one foot planted on either side and the torso upright. Rest both forearms lightly across the top of the backrest. Hold a short braided leather riding crop horizontally beneath the relaxed hands, with the handle and tip extending a little beyond either side of the backrest."
+    "Cat o nine",
+    "Cat o nine — chair back, folded arms",
+    "Sitting facing the backrest of a sturdy chair, with one foot planted on either side and the torso upright. Rest both forearms lightly across the top of the backrest. Hold the short handle of a cat-o'-nine-tails whip beneath one relaxed hand, with its nine flexible leather tails draped loosely over the forearms and hanging down the front of the backrest."
   ],
   [
-    "Braided crop",
-    "Braided crop — stool, one foot raised",
-    "Sitting upright on a low stool with one foot resting on its support rung and the other foot planted slightly forward on the floor. Hold a short braided leather riding crop loosely across the lap in one hand, with its tip angled toward the raised knee. Rest the free hand on the stool edge for balance."
+    "Cat o nine",
+    "Cat o nine — stool, one foot raised",
+    "Sitting upright on a low stool with one foot resting on its support rung and the other foot planted slightly forward on the floor. Hold the short handle of a cat-o'-nine-tails whip loosely in one hand across the lap, with its nine flexible leather tails resting in relaxed folds over the thighs and hanging beside the raised knee. Rest the free hand on the stool edge for balance."
   ],
   [
-    "Braided crop",
-    "Braided crop — kneeling upright",
-    "Kneeling upright on both knees with the hips lifted away from the heels, shoulders relaxed and lower legs resting naturally behind. Hold a short braided leather riding crop horizontally against the fronts of the thighs in both hands, palms relaxed around the handle and shaft. Keep the chin level and the gaze calm."
+    "Cat o nine",
+    "Cat o nine — kneeling upright",
+    "Kneeling upright on both knees with the hips lifted away from the heels, shoulders relaxed and lower legs resting naturally behind. Hold a cat-o'-nine-tails whip with a short handle and nine flexible leather tails across the fronts of the thighs: one hand holds the handle, while the other loosely supports the gathered tails. Let the free lengths drape over the thighs. Keep the chin level and the gaze calm."
   ],
   [
-    "Braided crop",
-    "Braided crop — one-knee presentation",
-    "Resting on one knee with the other foot planted forward and the raised knee comfortably bent. Lay a short braided leather riding crop diagonally across the raised thigh, holding its handle in one hand and lightly supporting its tip with the other. Keep the back long and the head raised."
+    "Cat o nine",
+    "Cat o nine — one-knee presentation",
+    "Resting on one knee with the other foot planted forward and the raised knee comfortably bent. Present a cat-o'-nine-tails whip with a short handle and nine flexible leather tails across the raised thigh. Hold the handle in one hand and a loose bundle of tails in the other, letting the remaining lengths curve and drape over the knee. Keep the back long and the head raised."
   ],
   [
-    "Braided crop",
-    "Braided crop — low ready stance",
-    "Holding a balanced low stance with feet wide apart, one knee bent and the other leg extended comfortably to the side. Hold a short braided leather riding crop in one hand low beside the bent knee, its shaft pointing diagonally outward and down. Extend the free hand slightly forward for balance, with a focused, steady gaze."
+    "Cat o nine",
+    "Cat o nine — low ready stance",
+    "Holding a balanced low stance with feet wide apart, one knee bent and the other leg extended comfortably to the side. Hold a cat-o'-nine-tails whip by its short handle in one hand low beside the bent knee, with its nine flexible leather tails gathered loosely and drooping outward beside that leg. Extend the free hand slightly forward for balance, with a focused, steady gaze."
   ],
   [
-    "Braided crop",
-    "Braided crop — forward bow, hands behind back",
-    "Standing with both legs straight, feet parallel and comfortably separated. Hinge the upper body forward from the hips while maintaining a long spine and keeping the head raised. Hold a short braided leather riding crop horizontally behind the lower back with both hands near its ends, arms extended gently backward and shoulders relaxed."
+    "Cat o nine",
+    "Cat o nine — forward bow, hands behind back",
+    "Standing with both legs straight, feet parallel and comfortably separated. Hinge the upper body forward from the hips while maintaining a long spine and keeping the head raised. Hold a cat-o'-nine-tails whip with a short handle and nine flexible leather tails behind the lower back. Keep the hands apart behind the upper hips, one gripping the handle and the other supporting a loose bundle of tails, with the free ends hanging naturally. Extend the arms gently backward and keep the shoulders relaxed."
   ]
 ]);
 const poses=originalLabels.map((label,id)=>({id:String(id),label,category:originalCategories[id],description:poseDescriptions[id]}));
 for(const [category,label,description] of additions){const id=String(poseDescriptions.length);poseDescriptions.push(description);poses.push({id,label,category,description});}
-const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses','Riding crop','Braided crop','Shoe-focused poses','Feminine anime poses'];
+const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses','Riding crop','Cat o nine','Shoe-focused poses','Feminine anime poses'];
 const field=document.querySelector('.poses'),grid=field.querySelector('.pose-grid');field.querySelector('.note').textContent='Browse a category or search by name. Your selected pose stays selected while you browse.';
 const filters=document.createElement('div');filters.className='pose-filters fields';filters.innerHTML='<div><label for="poseCategory">Pose category</label><select id="poseCategory"></select></div><div><label for="poseSearch">Find a pose</label><input id="poseSearch" type="search" placeholder="e.g. crossed legs, boxing, leaning"></div>';grid.before(filters);
 const category=document.getElementById('poseCategory'),search=document.getElementById('poseSearch');category.add(new Option('All categories',''));for(const name of categories)category.add(new Option(name,name));category.value='Standing';
