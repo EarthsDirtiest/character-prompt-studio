@@ -63,11 +63,11 @@ Use Presets & saved > My saved characters to save and load. Quick builder, saves
 Backup & restore are also accessible through the Menu drawer. Closet, Scenes, and Tools
 retain their own editors, prompt views, and existing saved-data formats.
 
-## 2D illustration prototype
 
-Character builder > 2D preview contains a limited original SVG character study:
-one adult female body, five hairstyles, five tops, five bottoms, five footwear
-styles, shared skin/hair/garment colors, and illustrated thumbnails. The three
-test-look buttons change the current builder draft; the preview has no separate
-configuration or storage format. See [ANIME_PREVIEW.md](ANIME_PREVIEW.md) for
-asset layering, supported mappings, validation, limitations, and expansion notes.
+## Braided riding crop poses
+
+Pose & expression > Riding crop includes fifteen additional braided riding crop
+poses. Search “braided” to find them. “Braided crop — crossed legs, looking back”
+is a close variation of the original over-shoulder pose, with straight crossed
+legs and the crop held horizontally behind the lower back. Existing pose IDs
+remain unchanged, including poses referenced by saved characters and scenes.

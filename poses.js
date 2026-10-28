@@ -439,6 +439,84 @@ additions.push(...[
     "Sitting comfortably back in a sturdy chair behind a desk, with the back supported and both legs extended forward so that both shoe heels rest on the desktop. Keep the ankles uncrossed and the feet slightly apart, showing each shoe distinctly. Rest one forearm on a chair armrest and the other hand loosely in the lap. Leave space between the chair and desk so the extended legs rest comfortably on the desktop."
   ]
 ]);
+// Appended to preserve every previously saved numeric pose ID.
+additions.push(...[
+  [
+    "Riding crop",
+    "Braided crop — crossed legs, looking back",
+    "Standing with the torso rotated partly away and the left shoulder set back. Keep both legs straight and crossed, with one foot placed diagonally behind the other and both feet resting on the floor. Shift the hips gently backward while inclining the upper body slightly forward. Hold a short braided leather riding crop horizontally behind the lower back at the upper hips, gripping it with both hands near its ends, with the arms extended down behind the body. Turn the head back over the left shoulder with a steady gaze and a subtle, confident smile."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — low across the back",
+    "Standing tall with feet comfortably apart, shoulders gently drawn back and both elbows softly bent. Hold a short braided leather riding crop horizontally across the lower back in both hands, with the handle near one hip and the tip near the other. Keep the torso upright and the chin level."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — resting on shoulder",
+    "Standing with weight on the back leg and the front knee relaxed. Hold the handle of a short braided leather riding crop beside one shoulder, allowing its shaft to angle back over that shoulder and away from the face. Rest the free hand at the waist, with the head turned slightly toward the raised hand."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — diagonal across torso",
+    "Standing with feet staggered and shoulders relaxed. Hold a short braided leather riding crop diagonally across the front of the torso, gripping the handle near one hip while the other hand lightly supports the shaft below the opposite shoulder. Keep the elbows comfortably bent and the gaze directed ahead."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — vertical beside thigh",
+    "Standing mostly side-on with one foot half a step forward and the torso gently turned outward. Hold a short braided leather riding crop vertically beside the outer thigh, handle gripped at hip height and tip pointing down toward the calf without touching the floor. Rest the free hand behind the opposite hip."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — inspecting the braid",
+    "Standing with feet close but not crossed, holding a short braided leather riding crop horizontally in both hands at lower-chest height. Support the shaft with one palm and turn the handle gently with the other hand, looking down at its braided surface with a thoughtful, composed expression."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — walking shoulder turn",
+    "Taking a measured step with the rear heel beginning to lift, turning the head and upper torso back over one shoulder. Hold a short braided leather riding crop low behind the outer hip in the same-side hand, its shaft angled away from the legs. Let the free arm counterbalance the walking motion naturally."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — wall lean, crossed ankles",
+    "Resting the upper back lightly against a wall, with one ankle crossed loosely in front of the supporting leg and both feet grounded. Hold a short braided leather riding crop vertically in front of the body, both hands resting around its handle at waist height. Keep the shoulders low and the expression relaxed."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — seated, crossed legs",
+    "Sitting comfortably in a chair with one leg crossed over the other at the knee. Hold a short braided leather riding crop diagonally along the upper thigh with one hand around the handle, while the other forearm rests on an armrest. Sit back with the spine comfortably upright and the head turned slightly to one side."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — chair back, folded arms",
+    "Sitting facing the backrest of a sturdy chair, with one foot planted on either side and the torso upright. Rest both forearms lightly across the top of the backrest. Hold a short braided leather riding crop horizontally beneath the relaxed hands, with the handle and tip extending a little beyond either side of the backrest."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — stool, one foot raised",
+    "Sitting upright on a low stool with one foot resting on its support rung and the other foot planted slightly forward on the floor. Hold a short braided leather riding crop loosely across the lap in one hand, with its tip angled toward the raised knee. Rest the free hand on the stool edge for balance."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — kneeling upright",
+    "Kneeling upright on both knees with the hips lifted away from the heels, shoulders relaxed and lower legs resting naturally behind. Hold a short braided leather riding crop horizontally against the fronts of the thighs in both hands, palms relaxed around the handle and shaft. Keep the chin level and the gaze calm."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — one-knee presentation",
+    "Resting on one knee with the other foot planted forward and the raised knee comfortably bent. Lay a short braided leather riding crop diagonally across the raised thigh, holding its handle in one hand and lightly supporting its tip with the other. Keep the back long and the head raised."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — low ready stance",
+    "Holding a balanced low stance with feet wide apart, one knee bent and the other leg extended comfortably to the side. Hold a short braided leather riding crop in one hand low beside the bent knee, its shaft pointing diagonally outward and down. Extend the free hand slightly forward for balance, with a focused, steady gaze."
+  ],
+  [
+    "Riding crop",
+    "Braided crop — forward bow, hands behind back",
+    "Standing with both legs straight, feet parallel and comfortably separated. Hinge the upper body forward from the hips while maintaining a long spine and keeping the head raised. Hold a short braided leather riding crop horizontally behind the lower back with both hands near its ends, arms extended gently backward and shoulders relaxed."
+  ]
+]);
 const poses=originalLabels.map((label,id)=>({id:String(id),label,category:originalCategories[id],description:poseDescriptions[id]}));
 for(const [category,label,description] of additions){const id=String(poseDescriptions.length);poseDescriptions.push(description);poses.push({id,label,category,description});}
 const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses','Riding crop','Shoe-focused poses','Feminine anime poses'];
