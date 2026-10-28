@@ -36,3 +36,5 @@ html[data-studio-layout=workshop]{height:100%;overflow:clip}
 .studio-redesigned .closet-grid,.studio-redesigned .tools-grid{flex:1 1 0px;grid-template-rows:minmax(0,1fr);overflow:hidden}
 .studio-redesigned .closet-start{flex-shrink:0}
 }
+
+.studio-prompt-options{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;flex-wrap:wrap}.studio-redesigned .studio-prompt-length{display:flex;align-items:center;gap:8px;margin:0;font-size:11px;color:var(--ui-muted)}.studio-redesigned .studio-prompt-length select{width:auto;min-height:36px;font-size:12px;padding:7px 28px 7px 9px}.studio-prompt-options .studio-prompt-count{margin:0}@media(max-width:760px){.studio-redesigned .studio-prompt-length select{font-size:16px;min-height:44px}}

@@ -89,3 +89,14 @@ IDs are preserved, and Scenes supports the new category too.
 Scenes has its own Camera & style navigation section for the scene camera preset,
 additional direction, image style, lighting and mood. Location & story contains
 the background and scene description. On phones, open Menu to choose a section.
+
+
+## Prompt length
+
+Generated prompts default to Compact. Prompt length next to the character count
+switches between Compact and Detailed across the builder, Closet, Scenes and
+reference sheets. Compact shortens repeated generated framing, shoe-focus and
+rendering instructions while preserving character identity, clothing specifications,
+pose geometry and custom text. Detailed restores the original generated text.
+Copy and export use the displayed version; saved history keeps its original text.
+The preference is saved locally and does not change character or outfit data.
