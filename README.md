@@ -123,3 +123,15 @@ Save scene updates the loaded scene, or creates a named scene for a new draft.
 Saved scenes holds loading and library actions. New scene includes Undo, which
 restores the previous draft even after a reload. Draft settings, selected
 character and editing context are retained as you move between steps.
+
+
+## Closet layout
+
+The Closet has three views: Saved clothes, Clothing designer, and Outfits.
+Saved clothes uses the full workspace for category/search/favorites cards; picking
+an item opens its editor. Create clothing starts a fresh designer draft. The
+designer keeps naming, garment settings and saving together, with optional names,
+tags and copying tools folded away. Outfits starts with saved looks and clickable
+piece slots; the clothes picker opens when a slot is chosen. Randomize outfit
+is an action inside Outfits. Layer/accessory and filtering tools stay available
+in compact drawers. Saved data and garment detail controls are unchanged.
