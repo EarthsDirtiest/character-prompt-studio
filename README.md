@@ -109,3 +109,17 @@ and Square (1:1). The prompt includes the selected canvas shape and width:height
 aspect ratio in both Compact and Detailed modes. Orientation is saved with the
 character or scene, independently of the camera angle and full-body/POV framing.
 Surprise me keeps the selected orientation. Existing saves default to Portrait.
+
+
+## Scene workflow
+
+Scenes uses three freely editable steps: Cast & outfits, Scene & actions, and
+Camera & style. Choose a saved outfit first; individual items are optional
+refinements. Location, story, optional props and character actions are together.
+Camera settings and per-character framing/POV are together. Next and Back guide
+a new scene; the stepper and sidebar jump directly to any step. No step blocks
+navigation. Review scene opens an overview with Edit links for each selection.
+Save scene updates the loaded scene, or creates a named scene for a new draft.
+Saved scenes holds loading and library actions. New scene includes Undo, which
+restores the previous draft even after a reload. Draft settings, selected
+character and editing context are retained as you move between steps.
