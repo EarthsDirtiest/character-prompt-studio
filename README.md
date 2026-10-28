@@ -49,6 +49,17 @@ remain library labels; generated prompts use explicit descriptive features and
 photorealistic rendering instructions. Source artwork links are listed in each preset.
 
 
+Fifty additional human women are grouped under 26 specific franchises, including
+Tomb Raider, Final Fantasy, Street Fighter, Tekken, Assassin’s Creed, Dead or Alive,
+Uncharted, Control, Mirror’s Edge, Cyberpunk 2077, Cowboy Bebop, Black Lagoon,
+SPY × FAMILY, Fullmetal Alchemist, Lupin III, Death Note, The Matrix, Alien, Terminator,
+Kill Bill, The Hunger Games, Mad Max, Black Widow, Agents of S.H.I.E.L.D., Suits and
+Game of Thrones. These add 75 existing costumes, with one to three per character.
+The first look favors assertive combat, tailored or formal clothing where available.
+Production/game labels and reference links identify the costumes; these entries do
+not add invented casual outfits. Human prostheses, tattoos and small cyberware
+fittings remain part of the relevant character’s descriptive identity.
+
 ## Appearance
 
 Use Theme in the top navigation to choose Workshop (blue), Forest, Midnight, Plum,
