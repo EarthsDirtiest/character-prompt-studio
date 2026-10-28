@@ -72,3 +72,16 @@ immediately after Riding crop. “Cat o nine — crossed legs, looking back”
 keeps the original straight crossed-leg stance and shoulder turn, with the whip
 held behind the lower back. These replace the previously named braided crop
 poses at the same numeric IDs, preserving saved character and scene selections.
+
+
+## Soles in focus
+
+Pose & expression > Soles in focus contains 20 full-body poses with visible
+shoe soles, including feet on a desk, chair/sofa/ottoman rests, floor poses,
+steps, a walking sole reveal and a supported low kick. Shoes stay sharp in the
+foreground; the more distant body is gently softened while the face, eyes and
+expression remain recognizable. Both complete shoes and the full character stay
+in frame. Camera & style > Camera angle preset > Soles in focus applies the
+same treatment to other poses. These rules take priority over shoe close-up
+framing; character POV in Scenes retains its existing priority. Existing pose
+IDs are preserved, and Scenes supports the new category too.
