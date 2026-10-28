@@ -29,6 +29,13 @@ plus eight adult The Witcher adaptations with classic and alternate starter look
 Resident Evil adds twelve adult profiles and twenty-six game-labeled wardrobes: Jill,
 Claire, Ada, Leon, Chris, Rebecca, Sheva, Carlos, Wesker, Ashley, adult Sherry, and
 Lady Dimitrescu. Outfit eras share the selected adult identity and hairstyle.
+Disney Princess & Frozen adds fifteen fully human adult adaptations: Elsa, Anna, Belle,
+Snow White, Cinderella, Aurora, Ariel, Jasmine, Pocahontas, Mulan, Tiana, Rapunzel, Merida,
+Moana and Raya. Each has a signature dress, usual outfit and an original modern casual
+look (45 outfits). Second looks without a distinct everyday design, and ceremonial
+gown interpretations, are labeled adapted. Modern styles range from commanding
+monochrome to coastal summer, dark academia, streetwear, balletcore and outdoor wear.
+Face, skin, adult age, hairstyle and build stay consistent between the three looks.
 The Witcher category includes second-game wardrobes for Geralt, Triss and Dandelion.
 Starting-look names identify The Witcher 2 or The Witcher 3. Loading an existing preset
 or opening its preset closet adds missing starter looks while preserving edited
