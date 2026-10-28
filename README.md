@@ -85,3 +85,7 @@ in frame. Camera & style > Camera angle preset > Soles in focus applies the
 same treatment to other poses. These rules take priority over shoe close-up
 framing; character POV in Scenes retains its existing priority. Existing pose
 IDs are preserved, and Scenes supports the new category too.
+
+Scenes has its own Camera & style navigation section for the scene camera preset,
+additional direction, image style, lighting and mood. Location & story contains
+the background and scene description. On phones, open Menu to choose a section.
