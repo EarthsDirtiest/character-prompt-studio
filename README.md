@@ -66,8 +66,8 @@ retain their own editors, prompt views, and existing saved-data formats.
 
 ## Braided riding crop poses
 
-Pose & expression > Riding crop includes fifteen additional braided riding crop
-poses. Search “braided” to find them. “Braided crop — crossed legs, looking back”
+Pose & expression > Braided crop includes fifteen braided riding crop
+poses. Braided crop appears immediately after Riding crop in the category list. Search “braided” to find them. “Braided crop — crossed legs, looking back”
 is a close variation of the original over-shoulder pose, with straight crossed
 legs and the crop held horizontally behind the lower back. Existing pose IDs
 remain unchanged, including poses referenced by saved characters and scenes.
