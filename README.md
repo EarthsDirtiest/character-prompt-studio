@@ -153,3 +153,21 @@ tags and copying tools folded away. Outfits starts with saved looks and clickabl
 piece slots; the clothes picker opens when a slot is chosen. Randomize outfit
 is an action inside Outfits. Layer/accessory and filtering tools stay available
 in compact drawers. Saved data and garment detail controls are unchanged.
+
+
+## Add clothes from text
+
+In Closet, choose a character and select Paste clothing. Paste one item or a complete
+outfit, then Review items. The local vocabulary parser separates garments, suggests
+item names and fills the normal clothing dropdowns. Review names and options before
+adding; unfamiliar wording is flagged and requires acknowledgement. Unmapped prose
+is never stored as a replacement for editable controls. Parsing does not use a
+remote service or require an API key.
+
+Imports support up to 20 items and 12,000 characters. Identical items are reused by
+default. A complete combination can also be saved as an outfit. Top styling
+(tucked, untucked or half-tucked) belongs to that outfit and carries into scenes.
+Fabric weight, lace/mesh panel material, placement and transparency, exact heel
+height and hardware color are ordinary editable clothing options. Three-inch
+heels map to 7.6 cm and the 7–9 cm height range. Unsupported details stay flagged
+for review rather than being silently invented. Cancel leaves the closet intact.
