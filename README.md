@@ -171,3 +171,17 @@ Fabric weight, lace/mesh panel material, placement and transparency, exact heel
 height and hardware color are ordinary editable clothing options. Three-inch
 heels map to 7.6 cm and the 7–9 cm height range. Unsupported details stay flagged
 for review rather than being silently invented. Cancel leaves the closet intact.
+
+
+## Avatar: The Last Airbender presets
+
+Presets & saved → Character presets → Avatar: The Last Airbender contains Aang,
+Katara, Sokka, Toph Beifong, Zuko, Suki, Azula, Mai, Ty Lee, Iroh, Ozai, Ursa,
+Yue, Avatar Kyoshi and Avatar Roku, with 27 outfits from the original animated
+series. Younger characters are explicitly adult photographic adaptations aged
+18–24. These are descriptive interpretations, not live-action actor likenesses.
+Hair, physical markings, face and build stay fixed across wardrobe changes; masks
+and ceremonial face paint are outfit accessories. Toph's barefoot outfits request
+visible bare feet in the builder and scenes. Loading a preset is optional and
+keeps existing saved characters unchanged. Credits appear under Preset details
+& sources. Character and franchise names remain library metadata.
