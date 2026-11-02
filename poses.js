@@ -620,9 +620,87 @@ additions.push(...[
     "Standing balanced beside a rail, resting one hand lightly on it and extending the opposite leg in a controlled low kick toward the camera. Flex the raised foot to show its complete outsole without placing it in front of the face. Keep the supporting shoe entirely visible on the floor and the free hand relaxed at the waist. Full-body sole-focused composition: keep the entire character from head to toe and BOTH complete shoes inside the frame, with clear margins. Use a low front or appropriate three-quarter viewpoint aligned with the exposed sole, placing the featured outsole or outsoles prominently in the foreground and the character behind them. Leave an unobstructed sightline to the face. Keep the soles and shoe details tack sharp, with moderate depth of field gently softening the more distant body; the eyes, facial features and expression must remain visible and the identity recognizable. Avoid extreme bokeh, an unrecognizable face, cropped shoes, or shoes blocking the face. These full-body and sole-visibility requirements take priority over conflicting close-up or camera directions."
   ]
 ]);
+// Append only: existing pose IDs stay stable for saved characters and scenes.
+additions.push(...[
+  [
+    "Food crushing",
+    "Cake — first step",
+    "Standing with one foot planted beside a shallow cake on a low tray, pressing the other forefoot into its soft sponge and frosting. Keep the supporting leg steady, one hand on the hip and the head angled down toward the cake. Frosting spreads around the pressing foot without hiding its upper outline."
+  ],
+  [
+    "Food crushing",
+    "Cake — two-foot press",
+    "Standing upright with both feet slightly apart on separate sections of a wide, shallow sponge cake in a large low tray. Knees are softly bent as weight compresses the sponge and pushes frosting outward. Arms extend slightly for balance; both feet remain distinct and their uppers visible."
+  ],
+  [
+    "Food crushing",
+    "Chair — seated cake press",
+    "Sitting on the front edge of a sturdy chair with one foot planted on the floor and the other pressing down into a cake slice on a low tray. Lean slightly forward with both hands resting on the thighs. Show the squashed sponge and frosting around the pressing forefoot, with neither leg hiding the other."
+  ],
+  [
+    "Food crushing",
+    "Crossed legs — cream on shoe tip",
+    "Sitting upright on a chair with the right knee crossed over the left and hands resting loosely in the lap. Hold the raised foot at a gentle upward angle, with a small dollop of whipped cream balanced on the very toe tip of its shoe, or on the toes if barefoot. Keep the lower foot visible and the cream clear of the face."
+  ],
+  [
+    "Food crushing",
+    "Whipped cream — toe swirl",
+    "Standing with weight on one planted leg while the other foot reaches forward and traces a small curved smear through a mound of whipped cream on a shallow tray. Keep the heel of the moving foot slightly lifted, one hand resting on a nearby chair for balance, and the head turned toward the cream."
+  ],
+  [
+    "Food crushing",
+    "Cucumber — trampling step",
+    "Caught in a controlled forward step, pressing one forefoot across the middle of a cucumber lying lengthwise on a shallow tray. The cucumber splits and flattens beneath the pressure while the other foot stays planted behind. Keep the torso upright and arms naturally counterbalancing; show one clear crushing contact."
+  ],
+  [
+    "Food crushing",
+    "Cucumber — seated rolling press",
+    "Sitting upright on a low bench with one foot firmly planted and the other resting across a cucumber on a tray. Roll the pressing foot gently from heel toward forefoot, flattening the cucumber beneath it. Rest hands beside the hips and keep the feet separated so the contact and crushed pieces remain visible."
+  ],
+  [
+    "Food crushing",
+    "Tomato — heel press",
+    "Standing in a staggered stance, placing one heel onto a ripe tomato on a shallow tray while the toes of that foot remain lifted. Transfer controlled pressure through the heel, splitting the tomato and spreading pulp beneath it. The opposite leg supports the body and both arms remain relaxed for balance."
+  ],
+  [
+    "Food crushing",
+    "Grapes — alternating tread",
+    "Standing inside a broad shallow tray of loose grapes, captured mid-tread with one foot pressing grapes flat and the opposite heel lightly raised for the next step. Keep the knees relaxed, feet separated and arms slightly open for balance. Show crushed skins and juice close to the feet rather than hiding the legs."
+  ],
+  [
+    "Food crushing",
+    "Strawberries — seated toe press",
+    "Sitting sideways on a sturdy chair with the torso gently turned forward, one foot planted and the other reaching diagonally toward a few ripe strawberries on a small tray. Press the strawberries with the toe area, leaving a red smear, while one hand rests on the chair back and the other on the lap."
+  ],
+  [
+    "Food crushing",
+    "Banana — sliding sole press",
+    "Standing with weight on the back leg, placing the other foot flat on a peeled ripe banana laid on a shallow tray. Bend the front knee slightly and make a short forward slide, flattening the soft fruit beneath the sole. Keep one hand lightly on a chair for balance and keep the supporting foot clearly separate."
+  ],
+  [
+    "Food crushing",
+    "Cream pie — extended footrest",
+    "Reclining against the back of a sturdy chair with one leg extended forward and its foot resting gently into the center of a shallow cream pie on a low stool. Keep the other foot on the floor and hands on the armrests. Cream bulges around the extended foot while its upper outline, the supporting foot and the face stay unobstructed."
+  ],
+  [
+    "Food crushing",
+    "Doughnut — toe swivel",
+    "Standing with one foot planted beside a glazed doughnut on a tray, placing the ball of the other foot on the doughnut and making a small inward swivel. Keep that heel raised, the supporting knee soft and one hand on the hip. Show the flattened ring, broken glaze and short curved smear beneath the pressing forefoot."
+  ],
+  [
+    "Food crushing",
+    "Custard tart — raised foot after pressing",
+    "Sitting on the edge of a low bench after pressing a small custard tart on a tray. Extend the pressing foot slightly forward with the heel down and toes lifted, showing a little custard and pastry crumbs clinging beneath the toe area. Keep the other foot planted to the side and both hands on the bench edges."
+  ],
+  [
+    "Food crushing",
+    "Watermelon — low lunge press",
+    "Holding a shallow forward lunge with one foot pressing the red flesh of a ripe watermelon wedge laid on its side in a broad tray. Keep the back foot firmly planted, the front knee aligned over the ankle and hands resting on the hips. Soft flesh breaks into pieces around the pressing foot while the rind remains on the tray."
+  ]
+]);
 const poses=originalLabels.map((label,id)=>({id:String(id),label,category:originalCategories[id],description:poseDescriptions[id]}));
 for(const [category,label,description] of additions){const id=String(poseDescriptions.length);poseDescriptions.push(description);poses.push({id,label,category,description});}
-const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses','Riding crop','Cat o nine','Shoe-focused poses','Soles in focus','Feminine anime poses'];
+const categories=['Standing','Walking & running','Sitting','Kneeling & crouching','Reclining','Fighting','Dance & exercise','Gestures','Model poses','Dominant poses','Riding crop','Cat o nine','Shoe-focused poses','Food crushing','Soles in focus','Feminine anime poses'];
 const field=document.querySelector('.poses'),grid=field.querySelector('.pose-grid');field.querySelector('.note').textContent='Browse a category or search by name. Your selected pose stays selected while you browse.';
 const filters=document.createElement('div');filters.className='pose-filters fields';filters.innerHTML='<div><label for="poseCategory">Pose category</label><select id="poseCategory"></select></div><div><label for="poseSearch">Find a pose</label><input id="poseSearch" type="search" placeholder="e.g. crossed legs, boxing, leaning"></div>';grid.before(filters);
 const category=document.getElementById('poseCategory'),search=document.getElementById('poseSearch');category.add(new Option('All categories',''));for(const name of categories)category.add(new Option(name,name));category.value='Standing';

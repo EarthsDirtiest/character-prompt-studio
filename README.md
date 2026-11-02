@@ -185,3 +185,14 @@ and ceremonial face paint are outfit accessories. Toph's barefoot outfits reques
 visible bare feet in the builder and scenes. Loading a preset is optional and
 keeps existing saved characters unchanged. Credits appear under Preset details
 & sources. Character and franchise names remain library metadata.
+
+
+## Food crushing poses
+
+Pose & expression → Food crushing adds 15 selectable poses, also available in the
+Scenes pose picker. These include stepping into cake, a crossed-knee chair pose
+with whipped cream on the shoe tip, trampling and rolling a cucumber, and
+pressing grapes, strawberries, a tomato, banana, cream pie, doughnut, custard
+tart or watermelon. Descriptions include the food and any chair, bench or tray
+needed for the interaction. Outfit and camera choices stay under user control.
+Existing pose IDs are preserved so saved characters and scenes keep their poses.
