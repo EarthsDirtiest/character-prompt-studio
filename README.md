@@ -196,3 +196,23 @@ pressing grapes, strawberries, a tomato, banana, cream pie, doughnut, custard
 tart or watermelon. Descriptions include the food and any chair, bench or tray
 needed for the interaction. Outfit and camera choices stay under user control.
 Existing pose IDs are preserved so saved characters and scenes keep their poses.
+
+
+## Once Upon a Time and Riverdale presets
+
+Presets & saved → Character presets has separate Once Upon a Time and Riverdale
+categories, with 10 characters each and 37 wardrobes in total (20 + 17). The
+television fairy-tale characters have separate IDs from the animated Disney
+profiles. The first category includes Regina Mills, Emma Swan, Snow White /
+Mary Margaret, Belle French, Killian Jones / Captain Hook, David Nolan / Prince
+Charming, Zelena, Ruby Lucas / Red Riding Hood, Mr. Gold / Rumplestiltskin, and
+Robin Hood. Riverdale includes Betty Cooper, Veronica Lodge, Cheryl Blossom,
+Toni Topaz, Archie Andrews, Jughead Jones, Josie McCoy, Reggie Mantle, Kevin
+Keller and Tabitha Tate.
+
+These are photographic adult interpretations with the same identity across
+outfits. Riverdale profiles use adults aged 25–34 even for earlier-season
+wardrobes. Clothes follow recognizable screen looks, with visual approximations
+for materials and footwear construction. Mr. Gold and Zelena retain their human
+complexions. Costume accessories remain clothing items, and loading a profile
+does not replace existing library entries. Credits are in Preset details & sources.
