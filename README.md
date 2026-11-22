@@ -201,7 +201,7 @@ Existing pose IDs are preserved so saved characters and scenes keep their poses.
 ## Once Upon a Time and Riverdale presets
 
 Presets & saved → Character presets has separate Once Upon a Time and Riverdale
-categories, with 10 characters each and 37 wardrobes in total (20 + 17). The
+categories, with 10 characters each and 100 wardrobes in total (50 + 50), five per character. The
 television fairy-tale characters have separate IDs from the animated Disney
 profiles. The first category includes Regina Mills, Emma Swan, Snow White /
 Mary Margaret, Belle French, Killian Jones / Captain Hook, David Nolan / Prince
@@ -216,3 +216,11 @@ wardrobes. Clothes follow recognizable screen looks, with visual approximations
 for materials and footwear construction. Mr. Gold and Zelena retain their human
 complexions. Costume accessories remain clothing items, and loading a profile
 does not replace existing library entries. Credits are in Preset details & sources.
+
+
+The five-look expansion adds modern Storybrooke clothes alongside fantasy
+costumes, plus more Riverdale screen outfits. Select an installed character in
+Character presets and use Load character & closet to add its missing starter
+looks. Existing saved identities, edited items, outfit names and custom looks
+are retained. Loading again does not duplicate the starter looks. Wish Realm
+counterpart and Hyperion Heights persona costumes are explicitly labeled.
